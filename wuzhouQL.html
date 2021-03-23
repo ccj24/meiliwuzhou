@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>梧州骑楼城</title>
+		<style>
+			
+			/* .store_nr {
+				border-top: 0.02rem solid #f1f1f1;
+				padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+				position: relative;
+			} */
+			.aside {
+				float: left;
+				height: 720px;
+				width: 300px;
+				/* background-color: #cff; */
+				text-align: center;
+				font-size: 14px;
+				color: #000;
+			}
+			#aside h2 {
+				margin: 20px;
+			}
+			#imglist {
+				width: 130px;
+				margin: 8px auto;
+			}
+			#imglist img {
+				height: 95px;
+				width: 85px;
+				margin: 0 auto;
+			}
+			.rotate-left {
+				-webkit-transform: rotate(7deg);
+				-ms-transform: rotate(7deg);
+				-o-transform: rotate(7deg);
+				transform: rotate(7deg);
+			}
+			.rotate-right {
+				-webkit-transform: rotate(-7deg);
+				-ms-transform: rotate(-7deg);
+				-o-transform: rotate(-7deg);
+				transform: rotate(-7deg);
+			}
+			.pol {
+				width: 85px;
+				padding: 10px;
+				background-color: #eee;
+				border: 1px solid #bfbfbf;
+				box-shadow: 2px 2px 4px #aaa;
+				border-radius: 5px;
+			}
+			#qicontent {
+				float: right;
+				width: 645px;
+				margin-bottom: 5px;
+				/* background-color: #cff; */
+				height: 710px;
+			}
+			.subcon {
+				width: 520px;
+				/* margin: 10px auto; */
+				clear: both;
+			}
+			.subcon img {
+				margin: 5px;
+				padding: 5px;
+				width: 30%;
+				height: 1.5rem;
+				float: left;
+				/* border: 1px dashed #000; */
+			}
+			.subcon .subtext {
+				width: 63%;
+				float: left;
+				margin: 5px;
+			}
+			.subcon h2 {
+				margin: 5px;
+				font-size: 0.3rem;
+			}
+			.subtext p {
+				font: 16px/2em;
+				font-size: 0.2rem;
+			}
+
+			#foter {
+				font-size: 0.3rem;
+				height: 60px;
+				line-height: 60px;
+				background-color: #e1ebf2;
+				clear: both;
+				text-align: center;
+			}
+		</style>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/autorem.js"></script>
+	</head>
+
+	<body>
+		<div class="index">
+			<div class="console">
+				<div class="console_top">
+					<div class="shop_div">
+						<img class="shop_logo" src="img/logo.jpg" alt="" />
+						<p class="shop_name">百年商埠·魅力梧州</p>
+					</div>
+					<div class="userinfo">
+						<img class="userimg" src="img/user.jpeg" alt="" />
+						<p class="user_name">欢迎来到梧州</p>
+						<!-- <img class="sjx_icon" src="img/sjx.png" alt="" />
+                    <img class="power" src="img/power.png" alt="" /> -->
+					</div>
+				</div>
+				<div class="content">
+					<div class="menu">
+						<!-- 如果滚动条经过就用menu_titlediv2样式，正常就要menu_titlediv样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+						<a href="index.html">
+							<div class="menu_titlediv">
+								<img
+									class="menu_icon1"
+									src="./img/menu_icon1.png"
+									alt=""
+								/>
+								<p class="menu_title">主页</p>
+							</div>
+						</a>
+
+						<div class="menu_main">
+							<!-- 如果滚动条经过就用mainlist2样式，正常就要mainlist样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouBYS.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon2.png"
+										alt=""
+									/>
+									<p class="list_p">白云山景区</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhoulm.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州龙母庙</p>
+								</div>
+							</a>
+
+							<!-- 如果滚动条经过就用mainlist_nr2样式，正常就要mainlist_nr样式，滚动条图片为 <img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouQL.html">
+								<div class="mainlist_nr2">
+									<img
+										class="menu_icons"
+										src="img/menu_icon4.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州骑楼城</p>
+									<img
+										class="progress_bar"
+										src="img/menu_auto.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhouSBS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon5.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州风景</p>
+								</div>
+							</a>
+
+							<a href="wuzhouCH.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州苍海湖</p>
+								</div>
+							</a>
+
+							<a href="wuzhouLiuputea.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon7.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州六堡茶</p>
+								</div>
+							</a>
+						</div>
+						<div class="menu_main">
+							<a href="wuzhouglg.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon8.png"
+										alt=""
+									/>
+									<p class="list_p">老字号特色小吃</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhouLJS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon9.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">李济深故居</p>
+								</div>
+							</a>
+
+							<a href="wuzhouWcity.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon10.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">永安王城</p>
+								</div>
+                            </a>
+                            <a href="future/ljgd.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">未来可期</p>
+								</div>
+                            </a>
+                            <a href="about.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">关于我</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="manage">
+						<div class="manage_nav_nr">
+							<img
+								class="nav_icon"
+								src="img/nav_icon.png"
+								alt=""
+							/>
+							<img class="nav_sjx" src="img/nav_sjx.png" alt="" />
+							<p class="nav_p">骑楼风墙，摇摆至上</p>
+						</div>
+						<div class="manage_content">
+							<div class="manage_divs">
+								<div class="store_info">
+									<div class="store_info_top">
+										<div class="store_info_squre"></div>
+										<p class="store_info_top_p">
+											韶华尽去 百年中国骑楼城将走进历史
+										</p>
+									</div>
+									<div class="store_nr" style="	border-top: 0.02rem solid #f1f1f1;
+                                    padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+                                    position: relative;">
+										<div class="qlmain">
+											<div class="aside">
+												<h2>发展历程</h2>
+												<table
+													style="
+														padding-left: 0.5rem;
+													"
+												>
+													<tr>
+														<th>建造<br />1855</th>
+														<th>出生<br />8-24</th>
+														<th>成长<br />1996</th>
+														<th>辉煌<br />2008</th>
+														<th>落幕<br />2000</th>
+													</tr>
+													<tr>
+														<th scope="row">
+															成长
+														</th>
+														<td>2000</td>
+														<td>2001</td>
+														<td>2002</td>
+														<td>2009</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															辉煌
+														</th>
+														<td>2000</td>
+														<td>2004</td>
+														<td>2008</td>
+														<td>3次</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															落幕
+														</th>
+														<td>2次</td>
+														<td>2016</td>
+														<td>2017</td>
+														<td>2019</td>
+													</tr>
+												</table>
+												<div id="imglist">
+													<div
+														class="pol rotate-left"
+													>
+														<img
+															src="./img/ql1.jpg"
+															alt=""
+														/>
+													</div>
+													<div
+														class="pol rotate-right"
+													>
+														<img
+															src="./img/ql2.jpg"
+															alt=""
+														/>
+													</div>
+													<div
+														class="pol rotate-left"
+													>
+														<img
+															src="./img/ql3.jpg"
+															alt=""
+														/>
+													</div>
+													<div
+														class="pol rotate-right"
+													>
+														<img
+															src="./img/ql4.jpg"
+															alt=""
+														/>
+													</div>
+												</div>
+											</div>
+											<div id="qicontent">
+												<div class="subcon">
+													<img
+														src="./img/ql1.jpg"
+														alt=""
+													/>
+													<div class="subtext">
+														<h2>中国骑楼博物城</h2>
+														<p>
+															梧州骑楼城位于广西壮族自治区梧州河东老城区，规模之大，数量之多，
+															国内罕见，现存骑楼街道22条，总长7公里，最长街道大2530米，是名副其实的"中国骑楼博物城"。
+														</p>
+													</div>
+												</div>
+												<div class="subcon">
+													<img
+														src="./img/ql2.jpg"
+														alt=""
+													/>
+													<div class="subtext">
+														<h2>百年商贸繁华</h2>
+														<p>
+															骑楼城是梧州近现代百年商贸繁华的历史见证，建筑是结合南方潮湿多雨及多洪易涝的气候特点而设计建造
+															，这样既可以替行人遮阳挡雨，又可以为商铺营造舒适环境
+														</p>
+													</div>
+												</div>
+												<div class="subcon">
+													<img
+														src="./img/ql3.jpg"
+														alt=""
+													/>
+													<div class="subtext">
+														<h2>
+															爱上你，爱上骑楼城
+														</h2>
+														<p>
+															骑楼在岭南地区相对普通，保存如此之好，连片成城的真是罕见，显示着梧州曾经的辉煌
+														</p>
+													</div>
+												</div>
+												<div class="subcon">
+													<img
+														src="./img/ql4.jpg"
+														alt=""
+													/>
+													<div class="subtext">
+														<h2>老街的骑楼</h2>
+														<p>
+															身为岭南人，骑楼绝对不会少见，但能称上“城”的规模，却是第一次。
+															梧州这片骑楼不仅历史悠久，而且规模和集中度在我国也是数一数二。
+														</p>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div id="foter">
+										<p>千年岭南重镇，百年两广商埠</p>
+									</div>
+								</div>
+								<div class="store_info2">
+									<div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon"
+												src="img/intro_icon.png"
+												alt=""
+											/>
+											<p class="about_p">
+												千年岭南重镇，百年两广商埠
+											</p>
+										</div>
+										<div
+											class="about_nr"
+											style="object-fit: none;"
+										>
+											<!-- <video
+											muted
+											controls
+											autoplay
+											autoplay="autoplay"
+											width="250"
+											height="400"
+										>
+											<source
+												src="./video/qlc.mp4"
+												type="video/qlc.mp4"
+											/>
+											<source
+												src="./video/qlc.mp4"
+												type="video/ogg"
+											/>
+										</video> -->
+											<div class="about_text">
+												1897年开埠后，梧州成为广西的商业中心。上世纪二十年代，梧州商埠局拆古城墙、拓宽街道，原来的坊式房逐渐被骑楼取代，在河东老城区留下连绵成片的骑楼群。
+												22条原汁原味骑楼长街上，560座中西文化水乳交融的传奇建筑，
+												荟萃中外经典设计的骑楼。骑楼街士贾云集，最风光时街上有大小商号1500多家，造就了上万富商，人称“千年岭南重镇，百年两广商埠”
+											</div>
+										</div>
+									</div>
+									<div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon2"
+												src="img/sound.png"
+												alt=""
+											/>
+											<p class="about_p">游客骑楼印象</p>
+										</div>
+										<div class="about_nr">
+											<div class="about_text">
+												梧州骑楼城位于广西壮族自治区梧州河东老城区，规模之大，数量之多，国内罕见，现存骑楼街道22条，总长7公里，最长街道大2530米，是名副其实的"中国骑楼博物城"。
+												骑楼在岭南地区相对普通，保存如此之好，连片成城的真是罕见，显示着梧州曾经的辉煌。梧州的骑楼城并不是骑楼最多的，
+												广州骑楼更多，但梧州骑楼却是我国骑楼最集中的，纵横几条大街，很多骑楼还保留原有特色。
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img class="erweima_img" src="./img/qrcode.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

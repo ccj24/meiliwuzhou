@@ -1,0 +1,1538 @@
+@charset "UTF-8";
+/*总样式*/
+body, div, p, img, a, ul, li, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  /*去掉下划线*/
+}
+
+ul, li {
+  list-style-type: none;
+  /*去掉列表类型样式（ul，li自带的小圆点）*/
+}
+
+.f-l {
+  float: left;
+  /*左浮动*/
+}
+
+.f-r {
+  float: right;
+  /*右浮动*/
+}
+/* <!-- 登录小窗口 --> */
+.index .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #0e268b;
+  background-image: url(../img/loginbg.jpg);
+  background-position: 0 bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.index .loading .load_div {
+  position: absolute;
+  top: 1.55rem;
+  right: 4.4rem;
+}
+
+.index .loading .load_div .load {
+  background-color: #ffffff;
+  padding: 0.4rem 0.3rem 0.18rem 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.index .loading .load_div .load .load_title {
+  color: #333333;
+  font-size: 0.18rem;
+  margin-bottom: 0.38rem;
+  letter-spacing: 0.02rem;
+  font-family: "MicrosoftYaHei";
+}
+
+.index .loading .load_div .load .accountNumber,
+.index .loading .load_div .load .password {
+  width: 2.92rem;
+  display: block;
+  line-height: 0.5rem;
+  border: solid 0.01rem #999999;
+  border-radius: 0.03rem;
+  color: #333333;
+  font-size: 0.16rem;
+  outline: 0;
+  padding: 0 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.index .loading .load_div .load .password {
+  margin-bottom: 0.09rem;
+}
+
+.index .loading .load_div .load .hint {
+  color: #f90000;
+  font-size: 0.14rem;
+  padding-left: 0.02rem;
+}
+
+.index .loading .load_div .load .btn {
+  margin-top: 0.26rem;
+  background-color: #10b7fd;
+  border-radius: 0.03rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: "MicrosoftYaHei";
+  font-size: 0.18rem;
+}
+
+.index .loading .load_div .load .choose_div {
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #818b97;
+}
+
+.index .loading .load_div .load .choose_div .remember {
+  overflow: hidden;
+}
+
+.index .loading .load_div .load .choose_div .remember .remember_icon {
+  width: 0.14rem;
+  height: 0.14rem;
+  float: left;
+  margin-right: 0.06rem;
+  margin-top: 0.02rem;
+}
+
+.index .loading .load_div .load .choose_div .remember .remember_p {
+  float: left;
+  font-size: 0.14rem;
+}
+
+.index .loading .load_div .load .choose_div .forget_p {
+  font-size: 0.14rem;
+}
+
+.index .loading .load_div .download {
+  line-height: 0.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 0.18rem;
+  letter-spacing: 0.02rem;
+  color: #10b7fd;
+}
+
+/* 二维码小窗口 */
+.index .loading .erweima_div {
+  position: absolute;
+  top: 1.55rem;
+  right: 4.5rem;
+}
+
+.index .loading .erweima_div .erweima {
+  background-color: #ffffff;
+  padding: 0.37rem 0.5rem 0.42rem 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.index .loading .erweima_div .erweima .erweima_title {
+  color: #1cbcff;
+  font-size: 0.36rem;
+  text-align: center;
+  margin-bottom: 0.14rem;
+}
+
+.index .loading .erweima_div .erweima .erweima_icon {
+  width: 2.53rem;
+  height: 2.53rem;
+}
+
+.index .loading .erweima_div .download {
+  line-height: 0.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 0.18rem;
+  letter-spacing: 0.02rem;
+  color: #10b7fd;
+}
+
+.index .console {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #164499;
+  background-image: url(../img/bg3.png);
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.index .console .console_top {
+  padding-left: 0.3rem;
+  padding-right: 0.52rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index .console .console_top .shop_div {
+  overflow: hidden;
+}
+
+.index .console .console_top .shop_div .shop_logo {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.13rem;
+  border-radius: 1rem;
+  float: left;
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.index .console .console_top .shop_div .shop_name {
+  float: left;
+  color: #ffffff;
+  font-size: 0.18rem;
+  margin-top: 0.31rem;
+  margin-bottom: 0.3rem;
+}
+
+.index .console .console_top .userinfo {
+  overflow: hidden;
+}
+
+.index .console .console_top .userinfo .userimg {
+  float: left;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: 0.2rem;
+  margin-right: 0.12rem;
+  margin-bottom: 0.2rem;
+  border-radius: 1rem;
+}
+
+.index .console .console_top .userinfo .user_name {
+  float: left;
+  color: #ffffff;
+  font-size: 0.18rem;
+  margin-top: 0.31rem;
+  margin-right: 0.32rem;
+  margin-bottom: 0.3rem;
+}
+
+.index .console .console_top .userinfo .sjx_icon {
+  float: left;
+  width: 0.12rem;
+  height: 0.07rem;
+  margin-top: 0.36rem;
+  margin-right: 0.65rem;
+  margin-bottom: 0.37rem;
+}
+
+.index .console .console_top .userinfo .power {
+  float: left;
+  width: 0.18rem;
+  height: 0.22rem;
+  margin-top: 0.29rem;
+  margin-bottom: 0.29rem;
+}
+
+.index .console .content {
+  margin-left: 0.3rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.index .console .content .menu {
+  margin-top: 0.5rem;
+  margin-right: 0.3rem;
+  float: left;
+  padding-bottom: 1.5rem;
+}
+
+.index .console .content .menu .menu_titlediv,
+.index .console .content .menu .menu_titlediv2 {
+  overflow: hidden;
+  background-color: #173c80;
+  padding: 0 0.27rem;
+  border-radius: 0.04rem;
+}
+
+.index .console .content .menu .menu_titlediv .menu_icon1,
+.index .console .content .menu .menu_titlediv2 .menu_icon1 {
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-right: 0.17rem;
+  float: left;
+  padding: 0.14rem 0;
+}
+
+.index .console .content .menu .menu_titlediv .menu_title,
+.index .console .content .menu .menu_titlediv2 .menu_title {
+  float: left;
+  color: #ffffff;
+  font-size: 0.16rem;
+  padding: 0.14rem 0;
+}
+
+.index .console .content .menu .menu_titlediv2 {
+  position: relative;
+  background-color: #183366;
+}
+
+.index .console .content .menu .menu_titlediv2 .progress_bar {
+  position: absolute;
+  left: 0;
+  top: 0.04rem;
+  width: 0.11rem;
+  height: 0.42rem;
+}
+
+.index .console .content .menu .menu_main {
+  background-color: #173c80;
+  border-radius: 0.04rem;
+  margin-top: 0.02rem;
+}
+
+.index .console .content .menu .menu_main .mainlist,
+.index .console .content .menu .menu_main .mainlist2 {
+  overflow: hidden;
+  padding: 0 0.27rem;
+  position: relative;
+}
+
+.index .console .content .menu .menu_main .mainlist .progress_bar,
+.index .console .content .menu .menu_main .mainlist2 .progress_bar {
+  position: absolute;
+  left: 0;
+  top: 0rem;
+  width: 0.11rem;
+  height: 0.42rem;
+}
+
+.index .console .content .menu .menu_main .mainlist .menu_icon2,
+.index .console .content .menu .menu_main .mainlist2 .menu_icon2 {
+  width: 0.19rem;
+  height: 0.17rem;
+  margin-right: 0.16rem;
+  margin-top: 0.2rem;
+  float: left;
+}
+
+.index .console .content .menu .menu_main .mainlist .list_p,
+.index .console .content .menu .menu_main .mainlist2 .list_p {
+  float: left;
+  color: #ffffff;
+  font-size: 0.16rem;
+  margin-right: 0.41rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.index .console .content .menu .menu_main .mainlist .show,
+.index .console .content .menu .menu_main .mainlist2 .show {
+  float: left;
+  width: 0.21rem;
+  height: 0.12rem;
+  margin-top: 0.2rem;
+}
+
+.index .console .content .menu .menu_main .mainlist2 {
+  position: relative;
+  background-color: #183366;
+}
+
+.index .console .content .menu .menu_main .mainlist2 .progress_bar {
+  position: absolute;
+  left: 0;
+  top: 0.04rem;
+  width: 0.11rem;
+  height: 0.42rem;
+}
+
+.index .console .content .menu .menu_main .mainlist_nr,
+.index .console .content .menu .menu_main .mainlist_nr2 {
+  padding-left: 0.33rem;
+  padding: 0 0.27rem;
+  overflow: hidden;
+}
+
+.index .console .content .menu .menu_main .mainlist_nr .menu_icons,
+.index .console .content .menu .menu_main .mainlist_nr2 .menu_icons {
+  float: left;
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-right: 0.19rem;
+  margin-top: 0.18rem;
+}
+
+.index .console .content .menu .menu_main .mainlist_nr .mainlist_nrp,
+.index .console .content .menu .menu_main .mainlist_nr2 .mainlist_nrp {
+  float: left;
+  color: #ffffff;
+  font-size: 0.14rem;
+  margin-top: 0.13rem;
+  margin-bottom: 0.13rem;
+}
+
+.index .console .content .menu .menu_main .mainlist_nr2 {
+  position: relative;
+  background-color: #183366;
+}
+
+.index .console .content .menu .menu_main .mainlist_nr2 .progress_bar {
+  position: absolute;
+  left: 0;
+  top: 0.04rem;
+  width: 0.11rem;
+  height: 0.42rem;
+}
+
+.index .console .content .manage {
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+  height: 100%;
+  position: relative;
+}
+
+.index .console .content .manage .manage_nav_nr {
+  overflow: hidden;
+  padding-left: 0.5rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.index .console .content .manage .manage_nav_nr .nav_icon {
+  float: left;
+  width: 0.18rem;
+  height: 0.14rem;
+  padding: 0.18rem 0.19rem 0rem 0.16rem;
+}
+
+.index .console .content .manage .manage_nav_nr .nav_sjx {
+  position: absolute;
+  left: 0rem;
+  bottom: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  z-index: 5;
+  -webkit-box-shadow: 0 0 0.13rem 0 rgba(6, 0, 1, 0.27);
+          box-shadow: 0 0 0.13rem 0 rgba(6, 0, 1, 0.27);
+}
+
+.index .console .content .manage .manage_nav_nr .nav_p {
+  float: left;
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.5rem;
+}
+
+.index .console .content .manage .manage_content {
+  background-color: #e1ebf2;
+  overflow: auto;
+  height: 82%;
+  position: relative;
+}
+
+.index .console .content .manage .manage_content .manage_divs {
+  overflow: hidden;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div {
+  margin-bottom: 2rem;
+  float: left;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+          box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+  border-radius: 0.04rem;
+  min-height: 4.85rem;
+  margin-right: 0.35rem;
+  padding-bottom: 0.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_titleDiv {
+  padding: 0 0.24rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_titleDiv .order_square {
+  width: 0.04rem;
+  height: 0.2rem;
+  float: left;
+  background-color: #407ac1;
+  margin-right: 0.18rem;
+  margin-top: 0.2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_titleDiv .order_title {
+  float: left;
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.6rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr {
+  padding: 0.24rem 0.24rem 0 0.24rem;
+  border-top: solid 0.02rem #f1f1f1;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box {
+  background-color: #f0f6f9;
+  border-radius: 0.04rem;
+  overflow: hidden;
+  padding: 0 0.24rem;
+  margin-bottom: 0.04rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_img {
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.41rem;
+  padding: 0.2rem 0;
+  border-radius: 1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_nr_boxp {
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_nr_boxp .order_count,
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_nr_boxp .order_count2 {
+  color: #24a5e8;
+  font-size: 0.3rem;
+  text-align: center;
+  margin-top: 0.24rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_nr_boxp .order_count2 {
+  color: #ed6615;
+}
+
+.index .console .content .manage .manage_content .manage_divs .order_div .order_nr .order_nr_box .order_nr_boxp .order_state {
+  color: #333333;
+  font-size: 0.2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes {
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box {
+  margin-bottom: 0.35rem;
+  -webkit-box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+          box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+  border-radius: 0.04rem;
+  background-color: #ffffff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box .detailes_top {
+  padding: 0 0.24rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box .detailes_top .detaiels_square {
+  width: 0.04rem;
+  height: 0.2rem;
+  float: left;
+  background-color: #407ac1;
+  margin-right: 0.18rem;
+  margin-top: 0.2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box .detailes_top .detailes_top_text {
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.6rem;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box .detailes_nr {
+  padding-left: 0.87rem;
+  padding-right: 1.09rem;
+  border-top: solid 0.02rem #f1f1f1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index .console .content .manage .manage_content .manage_divs .detailes .detailes_box .detailes_nr .detailes_logo {
+  float: left;
+  width: 2.4rem;
+  height: 2.5rem;
+  margin-top: 0.28rem;
+  margin-bottom: 0.28rem;
+  margin-right: 0.3rem;
+}
+
+
+
+
+
+.index .console .content .manage .manage_content .manage_divs .store_info {
+  margin-bottom: 0.6rem;
+  margin-bottom: 2rem;
+  width: 10.33rem;
+  float: left;
+  margin-right: 0.37rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+          box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_info_top {
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_info_top .store_info_squre {
+  width: 0.04rem;
+  height: 0.2rem;
+  background-color: #407ac1;
+  float: left;
+  margin: 0.16rem 0.17rem 0rem 0.27rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_info_top .store_info_top_p {
+  float: left;
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.52rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr {
+  border-top: 0.02rem solid #f1f1f1;
+  padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+  position: relative;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storename_div {
+  overflow: hidden;
+  margin-bottom: 0.21rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storename_div .store_namehint {
+  float: left;
+  color: #999999;
+  font-size: 0.16rem;
+  line-height: 0.42rem;
+  margin-right: 0.28rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storename_div .store_nameinput,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storename_div .store_nameinput2 {
+  min-width: 3.4rem;
+  color: #333333;
+  font-size: 0.16rem;
+  float: left;
+  border: solid 0.01rem #1cbcff;
+  line-height: 0.42rem;
+  padding: 0 0.1rem;
+  outline: 0;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storename_div .store_nameinput2 {
+  border: solid 0.01rem #cfcfcf;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 {
+  margin-bottom: 0.21rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logohint,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logohint {
+  float: left;
+  color: #999999;
+  font-size: 0.16rem;
+  margin-right: 0.28rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logodiv,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logodiv {
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logodiv .store_logo,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logodiv .store_logo {
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.12rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logodiv .storehave_btndiv,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logodiv .storehave_btndiv {
+  float: left;
+  padding-top: 0.2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logodiv .storehave_btndiv .btndiv,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logodiv .storehave_btndiv .btndiv {
+  background-color: #1cbcff;
+  border-radius: 0.04rem;
+  text-align: center;
+  padding: 0 0.24rem;
+  line-height: 0.3rem;
+  color: #ffffff;
+  font-size: 0.16rem;
+  margin-bottom: 0.08rem;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .store_logodiv .storehave_btndiv .btndiv_hint,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .store_logodiv .storehave_btndiv .btndiv_hint {
+  clear: both;
+  color: #dddddd;
+  font-size: 0.14rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select {
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div:last-child,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div:last-child {
+  border-bottom: solid 0.01rem #1cbcff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div:first-child,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div:first-child {
+  border-top: solid 0.01rem #1cbcff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div2,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div2 {
+  width: 3.4rem;
+  font-size: 0.16rem;
+  line-height: 0.43rem;
+  min-height: 0.43rem;
+  padding: 0 0.1rem;
+  border: solid 0.01rem #1cbcff;
+  color: #333333;
+  border-top: 0;
+  border-bottom: 0;
+  position: relative;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div .select_icon,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div2 .select_icon,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div .select_icon,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div2 .select_icon {
+  position: absolute;
+  right: 0.17rem;
+  top: 0.15rem;
+  width: 0.2rem;
+  height: 0.11rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .select .select_div2,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .select .select_div2 {
+  color: #ffffff;
+  background-color: #1cbcff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div .business,
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 .business {
+  float: left;
+  width: 1.2rem;
+  height: 0.8rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .storehave_div2 {
+  margin-bottom: 0.21rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info .store_nr .store_nr_surebtn {
+  background-color: #1cbcff;
+  border-radius: 0.04rem;
+  padding: 0 0.59rem;
+  color: #ffffff;
+  line-height: 0.55rem;
+  font-size: 0.2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.88rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about {
+  margin-bottom: 0.35rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+          box-shadow: 0 0 0.05rem 0 rgba(171, 171, 171, 0.42);
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_top {
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_top .about_icon,
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_top .about_icon2 {
+  float: left;
+  width: 0.2rem;
+  height: 0.23rem;
+  padding-right: 0.12rem;
+  padding: 0.15rem 0.12rem 0rem 0.13rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_top .about_icon2 {
+  width: 0.21rem;
+  height: 0.25rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_top .about_p {
+  float: left;
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.52rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_nr {
+  border-top: solid 0.02rem #f1f1f1;
+  padding: 0.27rem 0.25rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about .about_nr .about_text {
+  border: solid 0.01rem #1cbcff;
+  padding: 0.22rem 0.45rem 0.22rem 0.31rem;
+  min-height: 2.28rem;
+  color: #666666;
+  font-size: 0.16rem;
+  line-height: 0.24rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .store_info2 .about:last-child {
+  margin-bottom: 0rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  right: 0rem;
+  z-index: 1;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .control_top {
+  overflow: hidden;
+  padding-bottom: 0.4rem;
+  background-color: #ffffff;
+  padding-left: 0.5rem;
+  padding-top: 0.22rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .control_top .search_div {
+  float: left;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .control_top .search_div .search {
+  border: solid 0.01rem #cfcfcf;
+  line-height: 0.34rem;
+  padding: 0 0.25rem;
+  color: #cecece;
+  font-size: 0.14rem;
+  width: 4.2rem;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .control_top .search_div .search_btn {
+  float: left;
+  padding: 0 0.31rem;
+  line-height: 0.34rem;
+  text-align: center;
+  background-color: #12b7f5;
+  border-radius: 0 0.04rem 0.04rem 0;
+  color: #ffffff;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .control_top .sendbtn {
+  margin-right: 0.5rem;
+  float: right;
+  padding: 0 0.52rem;
+  color: #ffffff;
+  font-size: 0.16rem;
+  text-align: center;
+  line-height: 0.34rem;
+  background-color: #12b7f5;
+  border-radius: 0.04rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .constrol_nav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .constrol_nav .navtitle, .index .console .content .manage .manage_content .manage_divs .control_fixed .constrol_nav .navtitle2 {
+  color: #333333;
+  font-size: 0.16rem;
+  line-height: 0.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 2.1rem;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .control_fixed .constrol_nav .navtitle2 {
+  color: #3f86dd;
+  background-color: #e1ebf2;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 {
+  padding-top: 1.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.52rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose {
+  padding-top: 0.42rem;
+  padding-bottom: 0.16rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 {
+  padding: 0rem 0.49rem 0rem 0.31rem;
+  overflow: hidden;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose .outer_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .outer_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose .outer_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .outer_ring {
+  width: 0.16rem;
+  height: 0.16rem;
+  border: solid 0.02rem #b4b4b4;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  margin-right: 0.08rem;
+  margin-top: 0.02rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose .outer_ring .inside_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .outer_ring .inside_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose .outer_ring .inside_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .outer_ring .inside_ring, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .outer_ring .inside_ring2 {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: #12b7f5;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose .outer_ring .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .outer_ring .inside_ring2 {
+  background-color: #bcbdbe;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose .allchiose_p, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .allchiose_p, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose .allchiose_p, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .allchiose_p {
+  float: left;
+  color: #707070;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 {
+  margin-right: 0.29rem;
+  padding: 0;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .allchiose2 .inside_ring2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .allchiose2 .inside_ring2 {
+  background-color: #bcbdbe;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .chiosebox, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .chiosebox {
+  overflow: hidden;
+  float: left;
+  margin-right: 0.29rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .chiosebox .chiosebox_icon, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .chiosebox .chiosebox_icon {
+  float: left;
+  width: 0.16rem;
+  height: 0.16rem;
+  margin-right: 0.06rem;
+  margin-top: 0.03rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .chiosebox .chiosebox_p, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .chiosebox .chiosebox_p {
+  float: left;
+  color: #12b7f5;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_chiose .addstroe_btn, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_chiose .addstroe_btn {
+  padding: 0 0.52rem;
+  float: right;
+  line-height: 0.34rem;
+  text-align: center;
+  background-color: #12b7f5;
+  border-radius: 0.04rem;
+  color: #ffffff;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store {
+  background-color: #ffffff;
+  border: solid 0.01rem #e8e8e8;
+  overflow: hidden;
+  padding: 0.31rem;
+  margin-bottom: 0.1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .store_outer, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .store_outer {
+  width: 0.16rem;
+  height: 0.16rem;
+  border: solid 0.02rem #b4b4b4;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  margin-right: 0.37rem;
+  margin-top: 0.59rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .store_outer .store_inside, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .store_outer .store_inside2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .store_outer .store_inside, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .store_outer .store_inside2 {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: #12b7f5;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .store_outer .store_inside2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .store_outer .store_inside2 {
+  background-color: #b8b8b8;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .constrol_img, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .constrol_img {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.36rem;
+  border-radius: 0.1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .ischiose, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .ischiose {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2rem;
+  height: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 0.1rem 0.1rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .ischiose .dot, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .ischiose .dot2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .ischiose .dot, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .ischiose .dot2 {
+  float: left;
+  width: 0.14rem;
+  height: 0.14rem;
+  background-color: #63d3bd;
+  border-radius: 1rem;
+  margin: 0.08rem 0.1rem 0.08rem 0.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .ischiose .dot2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .ischiose .dot2 {
+  background-color: #ff5252;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_imgdiv .ischiose .ischiose_p, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_imgdiv .ischiose .ischiose_p {
+  float: left;
+  color: #ffffff;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw {
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_title, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_title {
+  color: #021218;
+  font-size: 0.18rem;
+  margin-bottom: 0.25rem;
+  font-family: "MicrosoftYaHei-Bold";
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_outstate, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_outstate {
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_outstate .outstate_text, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_outstate .outstate_text {
+  float: left;
+  color: #717171;
+  font-size: 0.16rem;
+  margin-right: 0.87rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_price, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_price {
+  color: #ff5252;
+  font-size: 0.22rem;
+  margin-bottom: 0.29rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit {
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit .store_editbox, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit .store_editbox {
+  overflow: hidden;
+  float: left;
+  margin-right: 0.95rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit .store_editbox .edit_icon, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit .store_editbox .edit_icon {
+  float: left;
+  width: 0.16rem;
+  height: 0.16rem;
+  margin-right: 0.06rem;
+  margin-top: 0.03rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit .store_editbox .edit_text, .index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit .store_editbox .edit_text2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit .store_editbox .edit_text, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit .store_editbox .edit_text2 {
+  float: left;
+  color: #707070;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr .constrol_store .constrol_zw .store_edit .store_editbox .edit_text2, .index .console .content .manage .manage_content .manage_divs .constrol_nr2 .constrol_store .constrol_zw .store_edit .store_editbox .edit_text2 {
+  color: #717171;
+}
+
+.index .console .content .manage .manage_content .manage_divs .constrol_nr2 {
+  padding-top: 0;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic {
+  margin: 0.32rem 0.5rem 0.3rem 0.5rem;
+  background-color: #ffffff;
+  padding-bottom: 0.86rem;
+  margin-bottom: 2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_top {
+  padding-left: 0.27rem;
+  overflow: hidden;
+  padding-bottom: 0.35rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_top .basic_square {
+  float: left;
+  background-color: #407ac1;
+  width: 0.04rem;
+  height: 0.2rem;
+  margin-right: 0.17rem;
+  margin-top: 0.14rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_top .basic_top_bt {
+  float: left;
+  color: #333333;
+  font-size: 0.18rem;
+  line-height: 0.48rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr {
+  padding: 0 0.43rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg {
+  overflow: hidden;
+  padding-bottom: 0.31rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_shop_p {
+  float: left;
+  color: #333333;
+  font-size: 0.16rem;
+  margin-top: 0.48rem;
+  margin-right: 0.25rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgdivs {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-right: 0.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgdivs .basic_img {
+  float: left;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgdivs .basic_ischoice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0rem;
+  width: 1.3rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgdivs .basic_ischoice .basic_ischoice_p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgdivs .basic_false {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.16rem;
+  height: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopimg .basic_imgtext {
+  clear: both;
+  color: #dddddd;
+  font-size: 0.14rem;
+  padding-left: 1rem;
+  padding-top: 0.22rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt {
+  padding-bottom: 0.3rem;
+  overflow: hidden;
+  clear: both;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_title {
+  float: left;
+  line-height: 0.4rem;
+  color: #333333;
+  font-size: 0.16rem;
+  margin-right: 0.11rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei {
+  float: left;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox {
+  float: left;
+  margin-right: 0.36rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox .fenlei_outer {
+  float: left;
+  border: 0.02rem solid #b4b4b4;
+  width: 0.16rem;
+  height: 0.16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  margin-right: 0.08rem;
+  margin-top: 0.1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox .fenlei_outer .fenlei_inside, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox .fenlei_outer .fenlei_inside2 {
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #1cbcff;
+  border-radius: 1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox .fenlei_outer .fenlei_inside2 {
+  background-color: #bcbdbe;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .fenlei .fenleibox .fenlei_p {
+  color: #333333;
+  font-size: 0.16rem;
+  float: left;
+  line-height: 0.4rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shopsize {
+  float: left;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shopsize .chang, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shopsize .chang2 {
+  float: left;
+  color: #dddddd;
+  font-size: 0.16rem;
+  padding: 0 0.07rem;
+  line-height: 0.3rem;
+  margin-right: 0.09rem;
+  border-bottom: 0.01rem solid #1cbcff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shopsize .chang2 {
+  color: #333333;
+  border-bottom: 0.01rem solid #bfbfbf;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shopsize .x {
+  float: left;
+  color: #dddddd;
+  font-size: 0.2rem;
+  line-height: 0.3rem;
+  margin-right: 0.09rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_danwei {
+  color: #333333;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
+  margin-left: 0.09rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv {
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_title_edit, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_title_edit2, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_title_edit3 {
+  border: solid 0.01rem #bfbfbf;
+  border-radius: 0.04rem;
+  padding-left: 0.3rem;
+  padding-right: 0.6rem;
+  line-height: 0.4rem;
+  color: #333333;
+  font-size: 0.16rem;
+  float: left;
+  min-width: 3.86rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_title_edit2 {
+  text-align: center;
+  color: #151515;
+  font-size: 0.2rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_title_edit3 {
+  min-width: 2.02rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv ::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_titlediv .shop_edit_hint {
+  position: absolute;
+  right: 0.12rem;
+  top: 0rem;
+  bottom: 0;
+  line-height: 0.4rem;
+  color: #828285;
+  font-size: 0.14rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects {
+  float: left;
+  border: solid 0.01rem #bfbfbf;
+  margin-right: 0.1rem;
+  border-radius: 0.04rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options2 {
+  overflow: hidden;
+  height: 0.4rem;
+  padding: 0 0.13rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options .basic_selects_p, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options2 .basic_selects_p {
+  text-align: center;
+  float: left;
+  color: #333333;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options .basic_sjxs, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options2 .basic_sjxs {
+  float: left;
+  margin-left: 0.05rem;
+  width: 0.15rem;
+  height: 0.11rem;
+  margin-top: 0.14rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options2 {
+  background-color: #1cbcff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .basic_selects .basic_options2 .basic_selects_p {
+  color: #ffffff;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopbt .shop_editstate {
+  float: left;
+  color: #ac1d2f;
+  font-size: 0.14rem;
+  line-height: 0.4rem;
+  margin-left: 0.09rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv {
+  overflow: hidden;
+  padding-top: 0.19rem;
+  padding-bottom: 0.36rem;
+  padding-left: 1.02rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots {
+  overflow: hidden;
+  float: left;
+  margin-right: 0.33rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots .basic_outer {
+  float: left;
+  border: 0.02rem solid #b4b4b4;
+  width: 0.16rem;
+  height: 0.16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  margin-right: 0.08rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots .basic_outer .basic_inside, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots .basic_outer .basic_inside2 {
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #1cbcff;
+  border-radius: 1rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots .basic_outer .basic_inside2 {
+  background-color: #bcbdbe;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_dotdiv .basic_dots .basic_dottext {
+  float: left;
+  color: #333333;
+  font-size: 0.16rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .basic_shopaddbtn {
+  padding: 0 0.37rem;
+  line-height: 0.5rem;
+  color: #ffffff;
+  font-size: 0.16rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  background-color: #1cbcff;
+  float: left;
+  margin-bottom: 0.51rem;
+  margin-left: 0.88rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .editor {
+  width: 11.2rem;
+  height: 2.9rem;
+  background-color: #ffffff;
+  border: solid 0.03rem #bfbfbf;
+  margin-left: 0.76rem;
+  margin-bottom: 0.48rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .editor_btns {
+  margin-left: 0.76rem;
+  overflow: hidden;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .editor_btns .editor_btn, .index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .editor_btns .editor_btn2 {
+  color: #ffffff;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.55rem;
+  padding: 0 1.3rem;
+  border-radius: 0.04rem;
+  background-color: #8dddff;
+  float: left;
+  margin-right: 0.77rem;
+}
+
+.index .console .content .manage .manage_content .manage_divs .basic .basic_info .basic_nr .editor_btns .editor_btn2 {
+  background-color: #1cbcff;
+}
+
+.index .console .erweima_img {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.58rem;
+  width: 1.3rem;
+  height: 1.7rem;
+  display: block;
+  z-index: 1;
+}
+
+.tabCont {display: none; width:100%;}
+
+/* 轮播图样式 */
+ 
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>永安王城</title>
+		<style>
+			.About {
+				height: 6rem;
+				background-color: #f6f9ff;
+			}
+
+			.Aboutujian {
+				width: 12.5rem;
+				height: 3rem;
+				margin: 100px auto;
+			}
+			.picbox {
+				float: left;
+				width: 3.81rem;
+				height: 2.81rem;
+				margin-right: 20px;
+				position: relative;
+				-webkit-transform-style: preseve-3d;
+				-moz-transform-style: preseve-3d;
+				-ms-transform-style: preseve-3d;
+				transform-style: preserve-3d;
+				transition: 1.5s;
+			}
+			/* 鼠标悬停时候做的动作 */
+			.picbox:hover {
+				transform: rotateY(180deg);
+			}
+			.face {
+				width: 3.81rem;
+				height: 2.81rem;
+				position: absolute;
+			}
+			.picbox img {
+				width: 3.81rem;
+				height: 2.81rem;
+				margin-right: 0.23rem;
+			}
+			/* 正面放置图片的样式 */
+			.front {
+				border: 2px solid #4b2518;
+			}
+			/* 背面的独特样式 设置背面为初始状态*/
+			.back {
+				-webkit-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				-o-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				background-color: #e1ebf2;
+				border: 2px solid #fff;
+			}
+			/* 背面标题文字的颜色 */
+			.back h3 {
+				font-size: 0.3rem;
+				color: #000000;
+				text-align: center;
+				font-weight: 600;
+			}
+			/* 关于梧州 */
+			.quick {
+				background-color: #ffffff;
+				/* height: 7.01rem; */
+			}
+
+			.quick .fastzombie {
+				padding-left: 1.63rem;
+				float: left;
+			}
+
+			.quick img {
+				width: 5.42rem;
+				height: 4.29rem;
+				padding-top: 0.9rem;
+				padding-left: 0.57rem;
+			}
+			.experience {
+				height: 6.85rem;
+				background-color: #ffffff;
+			}
+
+			.experience img {
+				width: 5.28rem;
+				height: 4.19rem;
+				padding-top: 1.85rem;
+				padding-left: 1.68rem;
+				float: left;
+				overflow: hidden;
+				padding-right: 0.5rem;
+			}
+		</style>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/thems.css" rel="stylesheet" type="text/css" />
+		<script src="js/autorem.js"></script>
+	</head>
+
+	<body>
+		<div class="index">
+			<div class="console">
+				<div class="console_top">
+					<div class="shop_div">
+						<img class="shop_logo" src="img/logo.jpg" alt="" />
+						<p class="shop_name">百年商埠·魅力梧州</p>
+					</div>
+					<div class="userinfo">
+						<img class="userimg" src="img/user.jpeg" alt="" />
+						<p class="user_name">欢迎来到梧州</p>
+						<!-- <img class="sjx_icon" src="img/sjx.png" alt="" />
+						<img class="power" src="img/power.png" alt="" /> -->
+					</div>
+				</div>
+				<div class="content">
+					<div class="menu">
+						<!-- 如果滚动条经过就用menu_titlediv2样式，正常就要menu_titlediv样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+						<a href="index.html">
+							<div class="menu_titlediv">
+								<img
+									class="menu_icon1"
+									src="img/menu_icon1.png"
+									alt=""
+								/>
+								<p class="menu_title">主页</p>
+							</div>
+						</a>
+
+						<div class="menu_main">
+							<a href="wuzhouBYS.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon2.png"
+										alt=""
+									/>
+									<p class="list_p">白云山景区</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhoulm.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州龙母庙</p>
+								</div>
+							</a>
+
+							<a href="wuzhouQL.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon4.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州骑楼城</p>
+								</div>
+							</a>
+
+							<a href="wuzhouSBS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon5.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州风景</p>
+								</div>
+							</a>
+
+							<a href="index.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州苍海湖</p>
+								</div>
+							</a>
+
+							<a href="wuzhouLiuputea.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon7.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州六堡茶</p>
+								</div>
+							</a>
+						</div>
+						<div class="menu_main">
+							<a href="wuzhouglg.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon8.png"
+										alt=""
+									/>
+									<p class="list_p">老字号特色小吃</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhouLJS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon9.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">李济深故居</p>
+								</div>
+							</a>
+							<!-- 如果滚动条经过就用mainlist_nr2样式，正常就要mainlist_nr样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouWcity.html">
+								<div class="mainlist_nr2">
+									<img
+										class="menu_icons"
+										src="img/menu_icon10.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">永安王城</p>
+									<img
+										class="progress_bar"
+										src="img/menu_auto.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="future/ljgd.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">未来可期</p>
+								</div>
+                            </a>
+                            <a href="about.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">关于我</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="manage">
+						<div class="manage_nav_nr">
+							<img
+								class="nav_icon"
+								src="img/nav_icon.png"
+								alt=""
+							/>
+							<img class="nav_sjx" src="img/nav_sjx.png" alt="" />
+							<p class="nav_p">梧州永安王城</p>
+						</div>
+						<div class="manage_content">
+							<div class="manage_divs">
+								<div class="constrol_nr2">
+									<div class="About">
+										<div style="text-align: center;">
+											<h1
+												style="
+													color: #4b5a6a;
+													font-size: 0.36rem;
+													padding-top: 0.42rem;
+													margin: 0;
+												"
+											>
+												新派武侠风
+												醉美蒙山情---之永安王城
+											</h1>
+											<p
+												style="
+													color: #999999;
+													font-size: 0.3rem;
+													margin: 0;
+													padding-top: 0.2rem;
+												"
+											>
+												永安王城位于梧州市蒙山县城。它是太平天国封王建制的地方！
+											</p>
+										</div>
+										<div
+											class="tabCont"
+											style="display: block;"
+										>
+											<ul class="ip_l clearfix">
+												<!-- 1 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya.1.jpeg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div>
+														</a>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>永安王城介绍</a
+															>
+														</h6>
+														<p>
+															永安王城景区是由蒙山县城市建设与旅游开发相结合的一个项目，总建筑面积5万平方米，投资约1.5亿元。
+															景区借鉴了宋城建筑商业古街的建筑风格，以湄江两岸综合休闲区
+															、太平天国历史文化区为核心，规划建设滨江公园、太平天国历史文化园、福寿文化、古榕公园、特色街区等子项目，打造整体服务品质较高的旅游休闲景区
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+												<!-- 2 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya3.jpeg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div>
+														</a>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>新派武侠风
+																醉美蒙山情</a
+															>
+														</h6>
+														<p>
+															永安王城包含滨江公园、太平天国历史文化园、福寿文化、古榕公园、特色街区等。蒙山县是闻名中外的“全国最美生态旅游示范县”。
+															太平天国公园内有当年洪秀全发布诏令的见证物--500多年玉兰古树、永安州古城墙、武庙、眢井土坑、太平天国诏令碑廊、太平天国历史文物陈列馆。
+															这一个小城增添了一圈光环。
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+												<!-- 3 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya2.jpeg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div></a
+														>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>历史文化底蕴</a
+															>
+														</h6>
+														<p>
+															永安王城作为一个旅游景区，它背后的历史事件超乎寻常的想象。洪秀全在广西桂平金田村组织起义后，永安州（今蒙山县）是起义军攻占满清皇朝最早具有战略地位的州衙。
+															太平天国起义军为了完善政权结构，完全按照封建王朝建制，在永安发布封王诏令，封杨秀清为东王、萧朝贵为西王、冯云山为南王、韦昌辉为北王、石达开为翼王。
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+												<!-- 4 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya2.jpeg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div></a
+														>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>太平天国封王建制</a
+															>
+														</h6>
+														<p>
+															永安王城景区是由蒙山县城市建设与旅游开发相结合的一个项目，总建筑面积5万平方米，投资约1.5亿元。
+															景区借鉴了宋城建筑商业古街的建筑风格，以湄江两岸综合休闲区、太平天国历史文化区为核心，规划建设滨江公园。
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+												<!-- 5 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya4.jpg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div></a
+														>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>天国永安王城</a
+															>
+														</h6>
+														<p>
+															蒙山永安王城，天朝封王地，秀美长寿乡，是一个旅游度假养生的好地方。蒙山蕴含丰富的历史文化底蕴、自然风景秀丽、人文风情浓厚，是太平天国洪秀全领导的太平军从金田起义后攻克的第一个州城的旧址，无论是探寻历史的轨迹，还是一览夜晚湄江的万千灯火，点点繁星，都让人流连忘返。
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+												<!-- 6 -->
+												<li>
+													<div class="tu">
+														<a href=""
+															><img
+																src="./img/yongan/ya5.jpg"
+																alt=""
+															/>
+															<div class="title">
+																永安王城景区
+															</div></a
+														>
+													</div>
+													<div class="des">
+														<h6>
+															<a href=""
+																>原味岭南
+																历史梧州</a
+															>
+														</h6>
+														<p>
+															原味岭南，历史梧州，梧州这座千年古城
+															，拥有众多的历史人文景观――骑楼城-龙母庙景区、梧州中山纪念堂、李济深故居、梧州市博物馆、袁崇焕故里、梁羽生公园、永安王城、太平天国永安活动旧址、中和窑址、邓公庙、珠山建道圣经学院旧址、梧州市旧英领事馆、梧州白鹤观
+														</p>
+														<a href="" class="more"
+															>+ 查看详情</a
+														>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="quick">
+										<div class="fastzombie">
+											<ul
+												style="
+													margin: 0;
+													padding: 0;
+													width: 4.98rem;
+												"
+											>
+												<li
+													style="
+														color: #0069e9;
+														font-size: 0.26rem;
+														padding-top: 0.89rem;
+														list-style: none;
+														font-weight: normal;
+													"
+												>
+													太平天国开国封王地-永安王城景
+												</li>
+												<li
+													style="
+														color: #4b5a6a;
+														font-size: 0.26rem;
+														padding-top: 0.19rem;
+														list-style: none;
+														font-weight: normal;
+													"
+												>
+													去广西游玩，大家可以考虑去永安王城景区！永安王城景区的建筑。永安王城景区的山，也不带太多的牵挂，不求什么邂逅，一切由情绪主宰，一切与心情相关，一切和性情有染。
+													永安王城景区的镜，这样一场说走就走的旅行，说复杂也不复杂，只要放空自己，随心而行。永安王城景区的夜景，人生就像一场旅行，
+													不必在意目的地，在乎的是沿途的风景和看风景的心情，让心灵去旅行。你说你带着苍白的回忆，却谢谢能与我相逢，我怕你在异乡夜里孤独醒来。
+												</li>
+											</ul>
+										</div>
+										<img
+											src="./img/yongan/ya4.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="experience">
+										<img src="./img/yongan/ya5.jpg" />
+										<div class="userexperience">
+											<ul style="margin: 0; padding: 0;">
+												<li
+													style="
+														font-size: 0.26rem;
+														color: #0069e9;
+														padding-top: 1.91rem;
+														list-style: none;
+														font-weight: normal;
+													"
+												>
+													武侠之乡蒙山永安王城、圣堂湖大峡谷
+												</li>
+												<li
+													style="
+														font-size: 0.26rem;
+														color: #4b5a6a;
+														padding-top: 0.19rem;
+														list-style: none;
+														font-weight: normal;
+														padding-right: 5px;
+													"
+												>
+													永安王城景区位于梧州市蒙山县城内，景区借鉴了宋城建筑商业古街的建筑风格，以湄江两岸综合休闲区及太平天国历史文化区为核心，规划建设滨江公园、太平天国历史文化园、福寿文化、古榕公园、特色街区等子项目，致力打造整体服务质量较高的旅游休闲景区。
+													　　永安州城的古城墙，一砖一瓦仿佛是时间散落的碎片，承载着一段历史的回忆。登上永安州古城墙，近距离触摸隐藏在古城墙里的岁月，领略一段固化的文化。
+													　　特色街区是蒙山美食的“大本营”，不妨来这里尝尝当地的牛系列美食，体验一下舌尖上的蒙山。
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img class="erweima_img" src="./img/qrcode.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

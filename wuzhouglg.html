@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>梧州龟苓膏</title>
+		<style>
+			/* 轮播图的样式 */
+			.container {
+				/* container采用相对定位relative，便于子容器进行绝对定位absolute */
+				position: relative;
+				width: 11.02rem;
+				height: 5rem;
+				margin: 0px auto 0px auto;
+				/* 给元素块添加周边阴影效果 */
+				/* box-shadow: 0 0 5px green; */
+				/*防止溢出*/
+				overflow: hidden;
+			}
+			/* 图片的div */
+			.wrap {
+				position: absolute;
+				width: 58.6rem;
+				height: 5rem;
+				z-index: 1;
+				padding: 0;
+			}
+			/* 设置整体图片的大小 */
+			.container .wrap li {
+				width: 11.72rem;
+				height: 5rem;
+				float: left;
+				/* 设置左浮动，所有的图片排成一排 */
+				list-style: none;
+			}
+
+			/* 设置局部图片的大小 */
+			.container img {
+				width: 2.44rem;
+				height: 2rem;
+				margin-right: 0.49rem;
+				margin-bottom: 0.61rem;
+				display: block;
+				float: left;
+			}
+			/* 去除下划线 */
+			a {
+				text-decoration: none;
+			}
+
+			.Mallstores {
+				position: relative;
+				text-align: center;
+			}
+			/* 对左右图片切换按钮进行修饰 */
+			.Mallstores .arrow img {
+				width: 0.15rem;
+				height: 0.29rem;
+			}
+
+			.Mallstores .arrow {
+				position: absolute;
+				top: 50%;
+				color: #cdcdcd;
+				padding: 0px 14px;
+				border-radius: 50%;
+				font-size: 50px;
+				z-index: 2;
+			}
+
+			.Mallstores .arrow_left {
+				left: 0.52rem;
+			}
+
+			.Mallstores .arrow_right {
+				right: 0.42rem;
+			}
+
+			.Mallstores:hover .arrow {
+				display: block;
+			}
+			/* 对小圆点进行修饰 */
+			.Mallstores .buttons {
+				font-size: 0;
+				margin-bottom: 30px;
+			}
+
+			.Mallstores .buttons span {
+				display: inline-block;
+				width: 0.1rem;
+				height: 0.1rem;
+				border-radius: 50%;
+				background-color: #cdcdcd;
+				text-align: center;
+				cursor: pointer;
+				margin-right: 30px;
+				/* font-size: 0;    */
+			}
+
+			.Mallstores .buttons span.on {
+				background-color: #6d6d6d;
+            }
+            .videoo video {
+				clear: both;
+				display: block;
+				margin: 50px auto 40px auto;
+                object-fit: none;
+                padding-bottom: 0.5rem;
+			}
+		</style>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/autorem.js"></script>
+	</head>
+
+	<body>
+		<div class="index">
+			<div class="console">
+				<div class="console_top">
+					<div class="shop_div">
+						<img class="shop_logo" src="img/logo.jpg" alt="" />
+						<p class="shop_name">百年商埠·魅力梧州</p>
+					</div>
+					<div class="userinfo">
+						<img class="userimg" src="img/user.jpeg" alt="" />
+						<p class="user_name">欢迎来到梧州</p>
+						<!-- <img class="sjx_icon" src="img/sjx.png" alt="" />
+						<img class="power" src="img/power.png" alt="" /> -->
+					</div>
+				</div>
+				<div class="content">
+                    
+					<div class="menu">
+						<!-- 如果滚动条经过就用menu_titlediv2样式，正常就要menu_titlediv样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+						<a href="index.html">
+							<div class="menu_titlediv">
+								<img
+									class="menu_icon1"
+									src="img/menu_icon1.png"
+									alt=""
+								/>
+								<p class="menu_title">主页</p>
+							</div>
+						</a>
+
+						<div class="menu_main">
+							<a href="wuzhouBYS.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon2.png"
+										alt=""
+									/>
+									<p class="list_p">白云山景区</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhoulm.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州龙母庙</p>
+								</div>
+							</a>
+
+							<a href="wuzhouQL.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon4.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州骑楼城</p>
+								</div>
+							</a>
+
+							<a href="wuzhouSBS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon5.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州风景</p>
+								</div>
+							</a>
+
+							<a href="wuzhouCH.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州苍海湖</p>
+								</div>
+							</a>
+
+							<a href="wuzhouLiuputea.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon7.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州六堡茶</p>
+								</div>
+							</a>
+						</div>
+						<div class="menu_main">
+							<!-- 如果滚动条经过就用mainlist2样式，正常就要mainlist样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouglg.html">
+								<div class="mainlist2">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon8.png"
+										alt=""
+									/>
+									<p class="list_p">老字号特色小吃</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+									<img
+										class="progress_bar"
+										src="img/menu_auto.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="wuzhouLJS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon9.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">李济深故居</p>
+								</div>
+							</a>
+
+							<a href="wuzhouWcity.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon10.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">永安王城</p>
+								</div>
+                            </a>
+                            <a href="future/ljgd.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">未来可期</p>
+								</div>
+                            </a>
+                            <a href="about.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">关于我</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="manage">
+						<div class="manage_nav_nr">
+							<img
+								class="nav_icon"
+								src="img/nav_icon.png"
+								alt=""
+							/>
+							<img class="nav_sjx" src="img/nav_sjx.png" alt="" />
+							<p class="nav_p">梧州好吃的特色小吃</p>
+						</div>
+						<div class="manage_content">
+							<div class="manage_divs">
+								<div class="control_fixed">
+									<div class="control_top">
+										<div class="search_div">
+											<input class="search" type="text" />
+											<div class="search_btn">搜索</div>
+                                        </div>
+                                        <a href="http://www.mafengwo.cn/cy/26480/gonglve.html"><div class="sendbtn">戳我食在梧州</div></a>
+										
+									</div>
+									<div class="constrol_nav">
+										<div
+											id="clane1"
+											class="navtitle2"
+											onclick="showdiv()"
+										>
+											全部
+										</div>
+										<div
+											id="clane2"
+											class="navtitle"
+											onclick="showdiv1()"
+										>
+											我的故事
+										</div>
+										<div
+											id="clane3"
+											class="navtitle"
+											onclick="showdiv2()"
+										>
+											视频展览
+										</div>
+									</div>
+								</div>
+								<div class="constrol_nr">
+									<div class="constrol_chiose">
+										<div class="allchiose">
+											<div class="outer_ring">
+												<div class="inside_ring"></div>
+											</div>
+											<p class="allchiose_p">重点推荐</p>
+										</div>
+									</div>
+									<!-- 列表1 -->
+									<div id="show1" style="display: block;">
+										<div class="constrol_store">
+											<!-- 轮播图 -->
+											<div class="Mallstores">
+												<div
+													style="
+														text-align: center;
+														margin-bottom: 15px;
+													"
+												>
+													<h1
+														style="
+															color: #4b5a6a;
+															font-size: 0.36rem;
+															margin: 0;
+															padding-top: 0.3rem;
+														"
+													>
+														梧州美食名吃
+													</h1>
+													<p
+														style="
+															color: #999999;
+															font-size: 0.24rem;
+															margin: 0;
+															padding-top: 0.2rem;
+														"
+													>
+														梧州美食的发展历程，还介绍了改革开放以来梧州本地的美食品牌，充分展示了梧州美食悠久的历史和迷人魅力。
+													</p>
+												</div>
+												<div class="container">
+													<ul
+														class="wrap"
+														style="left: 0rem;"
+													>
+														<!-- 把整体li看做一个元素 -->
+														<!-- 梧州龟苓膏 -->
+														<li>
+															<img
+																src="./img/meishi/glg1.jpg"
+																alt=""
+															/>
+
+															<img
+																src="./img/meishi/glg2.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg3.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg4.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg5.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg6.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg7.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/glg8.jpg"
+																alt=""
+															/>
+														</li>
+														<!-- 冰泉豆浆-->
+														<li>
+															<img
+																src="./img/meishi/dj1.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj2.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj3.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj4.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj5.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj6.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj7.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/dj8.jpg"
+																alt=""
+															/>
+														</li>
+														<!-- 梧州蒙山肉丸-->
+														<li>
+															<img
+																src="./img/meishi/ry1.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/ry2.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/ry3.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/ry4.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/ry5.jpg"
+																alt=""
+															/>
+															<img
+															src="./img/meishi/ry6.jpg""
+															alt="" />
+															<img
+																src="./img/meishi/ry7.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/ry8.jpg"
+																alt=""
+															/>
+														</li>
+														<!-- 梧州汤粉 -->
+														<li>
+															<img
+																src="./img/meishi/tf1.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf2.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf3.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf4.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf5.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf6.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf7.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/tf8.jpg"
+																alt=""
+															/>
+														</li>
+														<!-- 梧州手撕鸡-->
+														<li>
+															<img
+																src="./img/meishi/bj1.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj2.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj3.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj4.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj5.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj6.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj7.jpg"
+																alt=""
+															/>
+															<img
+																src="./img/meishi/bj8.jpg"
+																alt=""
+															/>
+														</li>
+													</ul>
+												</div>
+
+												<a
+													href="javascript:;"
+													class="arrow arrow_left"
+													><img
+														src="./img/leftslide.png"
+														alt=""
+												/></a>
+												<a
+													href="javascript:;"
+													class="arrow arrow_right"
+													><img
+														src="./img/rightslide.png"
+														alt=""
+												/></a>
+
+												<!-- 小圆点切换图片 -->
+												<div class="buttons">
+													<span class="on"></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+										</div>
+										<!-- 梧州龟苓膏 -->
+										<div class="constrol_store">
+											<div class="store_outer">
+												<div class="store_inside"></div>
+											</div>
+											<div class="constrol_imgdiv">
+												<img
+													class="constrol_img"
+													src="./img/meishi/glg1.jpg"
+													alt=""
+												/>
+												<div class="ischiose">
+													<div class="dot"></div>
+													<p class="ischiose_p">
+														双钱牌龟苓膏
+													</p>
+												</div>
+											</div>
+											<div class="constrol_zw">
+												<div class="store_title">
+													梧州龟苓膏
+												</div>
+												<div style="font-size: 0.2rem;">
+													<marquee
+														behavior="scroll"
+														onmouseover="this.stop()"
+														onmouseout="this.start()"
+														width="700"
+														height="140"
+														direction="up"
+													>
+														梧州龟苓膏，广西壮族自治区梧州市特产，中国国家地理标志产品。
+														是历史悠久的传统药膳，相传最初是清宫中专供皇帝食用的名贵药物，
+														它主要以鹰嘴龟和土茯苓为原料，再配生地等药物精制而成。其性温和，
+														具有清热去湿、滋阴补肾、养颜提神等功效，因而备受两广一带以及东南亚人的喜爱，
+														并畅销中外，远近闻名。
+														广西梧州古称苍梧郡。公元3世纪时（三国时），蜀汉皇帝刘备新丧，南方诸郡的土著趁机起兵叛变。
+														蜀国丞相诸葛亮亲自出马平乱。
+														诸葛亮南征时驻军于苍梧郡，当时蜀军将士多为北方人，初到南方水土不服，大多数将士上吐下泻
+														，严重影响战斗力。诸葛亮很着急，急忙找来当地人问个究竟。当地人说，梧州气候湿热、多雾（古称瘴气），
+														于是便献上妙方，以当地特产乌龟、土茯苓熬汤饮用。诸葛亮令军士一试，果然功效如神，大部分将士痊愈。
+														易拉罐装和塑料碗装的倒是也都很好吃，最重要是开盖即食的便利。不过我不是很喜欢这种甜味已经混入膏体的即食龟苓膏，
+														从小习惯了去凉茶铺或者甜品店里吃龟苓膏，店家从冰柜里取出装着黑黑的苦苦的原味龟苓膏的小瓷碗，
+														当场淋上蜂蜜或者炼乳端上桌，用不锈钢小勺子捣成小块吃，这种吃法甜味只包裹在龟苓膏表面，
+														要的就是入口一丝甜蜜过后接踵而来的冰凉、爽滑、甘苦。
+													</marquee>
+												</div>
+											</div>
+										</div>
+										<!-- 梧州冰泉豆浆 -->
+										<div class="constrol_store">
+											<div class="store_outer">
+												<div class="store_inside"></div>
+											</div>
+											<div class="constrol_imgdiv">
+												<img
+													class="constrol_img"
+													src="./img/meishi/dj2.jpg"
+													alt=""
+												/>
+												<div class="ischiose">
+													<div class="dot"></div>
+													<p class="ischiose_p">
+														梧州冰泉豆浆
+													</p>
+												</div>
+											</div>
+											<div class="constrol_zw">
+												<div class="store_title">
+													梧州冰泉豆浆
+												</div>
+												<div style="font-size: 0.2rem;">
+													<marquee
+														behavior="scroll"
+														onmouseover="this.stop()"
+														onmouseout="this.start()"
+														width="700"
+														height="140"
+														direction="up"
+													>
+														梧州冰泉豆浆得天独厚的是“冰井泉香”的井水。“冰井泉香”自唐朝已出名，《梧州府志》记载：“梧州城东有井出冰泉，井水甘凉清冽。”
+														梧州市冰泉豆浆馆座落在白云山脚的冰泉冲，已有60多年经营历史，冰泉豆浆以它“香、滑、浓”独具风味，驰名中外。冰泉豆浆以优质黄豆，
+														利用冰井泉水精工制作，保持黄豆的原色，是一种内含植物蛋白质，营养极其丰富的饮品。冰泉豆浆凉冻后，
+														面上凝成一层薄豆皮，滴在桌上成珠，聚而不散，谓之“滴珠豆浆”。这种豆浆醇浓、甘甜、香滑。港澳台同胞和外国友人都慕名而来以先饮为快。
+														“不饮冰泉豆浆，不算到过梧州”之说已传遍中梧州冰泉豆浆梧州冰泉豆浆外。在冰泉豆浆馆的门前，有“冰井泉香”几个遒劲有力的大字。
+														“冰井泉香”自唐朝已出名。《梧州府志》记载：“梧州城东有井出冰泉，井水甘凉清冽。”冰泉豆浆是因为用了这得天独厚的“冰井泉香”的井水。
+														冰泉滴珠豆浆的特色是醇浓、甘甜、香滑。尤其是它的浓度是一般豆浆的3倍，用汤勺舀而滴下如串珠，故名滴珠豆浆。
+														冰泉滴珠豆浆的浓是那种浓得恰到好处的浓。太浓或太稀都不能成为名副其实的滴珠豆浆。
+													</marquee>
+												</div>
+											</div>
+										</div>
+
+										<!-- 梧州汤粉 -->
+										<div class="constrol_store">
+											<div class="store_outer">
+												<div class="store_inside"></div>
+											</div>
+											<div class="constrol_imgdiv">
+												<img
+													class="constrol_img"
+													src="./img/meishi/tf5.jpg"
+													alt=""
+												/>
+												<div class="ischiose">
+													<div class="dot"></div>
+													<p class="ischiose_p">
+														梧州汤粉
+													</p>
+												</div>
+											</div>
+											<div class="constrol_zw">
+												<div class="store_title">
+													梧州汤粉
+												</div>
+												<div style="font-size: 0.2rem;">
+													<marquee
+														behavior="scroll"
+														onmouseover="this.stop()"
+														onmouseout="this.start()"
+														width="700"
+														height="140"
+														direction="up"
+													>
+														梧州汤粉，汤底佐以瘦肉牛肉牛腩等卤肉，适量调味料以及青菜少许，用猪骨鲜汤熬煮而成。
+														肉香卤味尽贯于汤粉之中，纵远观亦能闻见香泽浓郁。梧州人多喜好吃河粉，若有幸得尝河粉中的佳品，
+														真是“一啖未落肚，筷子又递到上嘴边”。河粉本来极烫，如此不停不歇地将一大碗热粉食罄，真会汗流满面，淋漓尽致。
+														河粉又有称“汤粉”、“老友粉”。以扁米粉为主，佐以瘦肉牛肉牛腩等卤肉，适量调味料以及青菜少许，用猪骨鲜汤熬煮而成，
+														肉香卤味尽贯于米粉之中，纵远观亦能闻见香泽浓郁。
+													</marquee>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                                    
+									<!-- 列表2 -->
+									<div id="show2" style="display: none;">
+										<div class="herbaljelly">
+											<div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+                                                    >
+                                                
+                                                </div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/meishi/glg1.jpg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															梧州龟苓膏的由来
+														</p>
+													</div>
+												</div>
+												<div class="constrol_zw" style="width: 6.5rem;float: left;">
+                                                    <div class="store_title" style="font-weight:800">
+                                                        <a href="http://culture.gxnews.com.cn/staticpages/20170814/newgx59917335-16437617.shtml">梧州龟苓膏的由来</a>
+														
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p style="margin-right: 0.2rem;">
+															龟苓来膏原产地就在梧州，梧州古称苍梧郡，三国时，蜀汉皇帝刘备新丧，
+															南方诸郡的土著趁机起兵叛乱，诸葛亮亲自出马平乱，这大概就是《三国演义源》中
+															“ 七擒孟获 ”
+															这一生发出来的故事。
+															话说诸葛亮南征时驻军于苍梧郡，当时兵将多为北方人，初到南方水土不服，大多数将士上吐下泻百，严重影响战斗力，诸葛亮很焦急，急忙找来当地人问个究竟。
+															当地人就说度，梧州气候湿热、多雾（古称瘴气），于是便献上妙方，以当地特产乌龟、土茯熬汤饮用，诸葛亮令军士一试，果然功效如神，大部分将知士均痊愈。
+														</p>
+														
+													</div>
+                                                </div>
+                                                <marquee
+															behavior="scroll"
+															onmouseover="this.stop()"
+															onmouseout="this.start()"
+															width="270"
+															height="240"
+															direction="up"
+                                                        >
+                                                        <img style="width: 3.5rem;" src="./img/meishi/glg2.jpg" alt="">
+														</marquee>
+                                            </div>
+                                            <div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+													></div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/meishi/dj2.jpg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															不饮冰泉羹，枉行
+														</p>
+													</div>
+												</div>
+												<div class="constrol_zw" style="width: 6.5rem;float: left;">
+                                                    <div class="store_title" style="font-weight:800">
+                                                        <a href="http://blog.sina.com.cn/s/blog_151e15c0c0102wu1b.html">有一种梧州情怀叫冰泉豆浆</a>
+														
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p style="margin-right: 0.2rem;">
+                                                            都说“不饮冰泉羹，枉然到梧州”冰泉豆浆斐声遐迩、得天独厚的是“冰井泉香”的井水以它“香、滑、浓”独具风味，驰名中外。
+                                                            滴滴珍珠凝素碗，甜如蜂蜜润入脂冰泉豆浆馆“滴珠豆浆”的味道可以说是梧州的味道也可以说是豆浆的味道在全国各地大街小巷及酒楼食肆琳琅满目的豆浆制造中。
+                                                            这里的豆浆味道独树一帜。有一种豆浆，叫做梧州冰泉豆浆有一种味道，叫做“滴珠豆浆”。
+                                                            今天就跟吃货春一起走近冰泉豆浆。
+                                                            探寻味道背后的坚持与情怀，冰泉豆浆馆！
+                                                            
+														</p>
+														
+													</div>
+                                                </div>
+                                                <marquee
+															behavior="scroll"
+															onmouseover="this.stop()"
+															onmouseout="this.start()"
+															width="270"
+															height="240"
+															direction="up"
+                                                        >
+                                                        <img style="width: 3.5rem;" src="./img/meishi/dj7.jpg" alt="">
+														</marquee>
+											</div>
+										</div>
+									</div>
+									<!-- 列表3 -->
+									<div
+										id="show3"
+										style="display: none;"
+                                    >
+                                    <!-- 视频 -->
+									<div class="videoo" style="background-color: #ffffff;text-align: center;margin-bottom: 0.5rem;">
+                                       <p style="font-size: 0.3rem;padding-top: 0.3rem;">广西梧州，是古苍梧郡、古广信县所在地。粤语发源地之一、梧州老字号特色小吃街</p>
+										<video
+											muted
+											controls
+											autoplay
+											autoplay="autoplay"
+											width="1100"
+											height="600"
+										>
+											<source
+												src="./video/qlc.mp4"
+												type="video/mp4"
+											/>
+											<source
+												src="./video/qlc.mp4"
+												type="video/ogg"
+											/>
+										</video>
+                                    </div>
+                                    <!-- 汤圆 -->
+                                    <div class="videoo" style="background-color: #ffffff;text-align: center;margin-bottom: 0.5rem;">
+                                        <p style="font-size: 0.3rem;padding-top: 0.3rem;">梧州那些你不知道的小吃，猜猜这是什么？</p>
+                                         <video
+                                             muted
+                                             controls
+                                             autoplay
+                                             autoplay="autoplay"
+                                             width="1100"
+                                             height="600"
+                                         >
+                                             <source
+                                                 src="./video/ty.mp4"
+                                                 type="video/mp4"
+                                             />
+                                             <source
+                                                 src="./video/ty.mp4"
+                                                 type="video/ogg"
+                                             />
+                                         </video>
+                                     </div>
+                                     <!--  河粉-->
+                                     <div class="videoo" style="background-color: #ffffff;text-align: center;margin-bottom: 0.5rem;">
+                                        <p style="font-size: 0.3rem;padding-top: 0.3rem;">一碗河粉，一座老城，一个故事</p>
+                                         <video
+                                             muted
+                                             controls
+                                             autoplay
+                                             autoplay="autoplay"
+                                             width="1100"
+                                             height="600"
+                                         >
+                                             <source
+                                                 src="./video/wzhf.mp4"
+                                                 type="video/mp4"
+                                             />
+                                             <source
+                                                 src="./vide/wzhf.mp4"
+                                                 type="video/ogg"
+                                             />
+                                         </video>
+                                     </div>
+                                     <!-- 梧州早茶 -->
+                                     <div class="videoo" style="background-color: #ffffff;text-align: center;margin-bottom: 0.5rem;">
+                                        <p style="font-size: 0.3rem;padding-top: 0.3rem;">有小香港之称的梧州，说的是粤语，广府文化，梧州的早茶也是非常出名的</p>
+                                         <video
+                                             muted
+                                             controls
+                                             autoplay
+                                             autoplay="autoplay"
+                                             width="1100"
+                                             height="600"
+                                         >
+                                             <source
+                                                 src="./video/wzzc.mp4"
+                                                 type="video/mp4"
+                                             />
+                                             <source
+                                                 src="./vide/wzzc.mp4"
+                                                 type="video/ogg"
+                                             />
+                                         </video>
+                                     </div>
+                                
+                                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img class="erweima_img" src="./img/qrcode.png" alt="" />
+			</div>
+		</div>
+		<script>
+			// 按键1
+			function showdiv() {
+				if (
+					(showdiv_display =
+						document.getElementById('show1').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show1').style.display = 'block' //show的display属性设置（显示）
+					document.getElementById('show2').style.display = 'none' //show的display属性设置（显示）
+					document.getElementById('show3').style.display = 'none' //show的display属性设置（显示）
+					document.getElementById('clane2').className = 'navtitle'
+					document.getElementById('clane1').className = 'navtitle2'
+					document.getElementById('clane3').className = 'navtitle'
+				} else {
+					//如果show是显示的
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+			// 按键2
+			function showdiv1() {
+				if (
+					(showdiv_display =
+						document.getElementById('show2').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show2').style.display = 'block' //show的display属性设置为block（显示）
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('show3').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('clane2').className = 'navtitle2'
+					document.getElementById('clane1').className = 'navtitle'
+					document.getElementById('clane3').className = 'navtitle'
+				} else {
+					//如果show是显示的
+					document.getElementById('show').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+			// 按键3
+			function showdiv2() {
+				if (
+					(showdiv_display =
+						document.getElementById('show3').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show3').style.display = 'block' //show的display属性设置为block（显示）
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('show2').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('clane2').className = 'navtitle'
+					document.getElementById('clane1').className = 'navtitle'
+					document.getElementById('clane3').className = 'navtitle2'
+				} else {
+					//如果show是显示的
+					document.getElementById('show').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+
+			//轮播图js
+			//获取三个对象  获取文档中 class="wrap" 的第一个元素
+			var wrap = document.querySelector('.wrap')
+			var next = document.querySelector('.arrow_right')
+			var prev = document.querySelector('.arrow_left')
+			var switchAnimation = true //动画的开关
+			var imgcount = 5
+			// 点击箭头,下一张图片
+			next.onclick = function () {
+				next_pic()
+			}
+			// 点击箭头，上一张图片
+			prev.onclick = function () {
+				prev_pic()
+			}
+			// 点击箭头,下一张图片
+			function next_pic() {
+				if (!switchAnimation) return
+				index++
+				if (index == imgcount) {
+					index = 0
+				}
+				var newLeft
+				// 判断class为wrap的元素   最后一个元素  下一个为第一个元素
+				// wrap.style.left==5100的时候表示已经到达最后一个元素
+				if (index == 0) {
+					// newLeft=-1700表示切换到第一个元素
+					newLeft = 0
+				} else {
+					// 否则继续向右平移850px  也就是切换一个元素
+
+					newLeft = (
+						(wrap.style.left ? parseFloat(wrap.style.left) : 0) -
+						11.72
+					).toFixed(2)
+				}
+				PlayAnimation(newLeft) //  传递两个参数 newLeft(目标平移量) 300(平移的总耗时)
+				showCurrentDot() //调用showCurrentDot这个函数
+			}
+
+			// 点击箭头，上一张图片
+			function prev_pic() {
+				if (!switchAnimation) return
+				index--
+				if (index < 0) {
+					index = 4
+				}
+
+				var newLeft
+				//当wrap.style.left === "0px"时表示此时为第一张图片
+				if (index == 4) {
+					// 此时切换到上一张，也就是最后一张，此时的平移值为3400px
+					newLeft = -46.88
+				} else {
+					// parseFloat()函数可解析一个字符串，并返回一个整数。
+					newLeft = (parseFloat(wrap.style.left) + 11.72).toFixed(2)
+				}
+
+				PlayAnimation(newLeft)
+				showCurrentDot() //调用showCurrentDot这个函数
+			}
+
+			// 轮播动画改变偏移量
+			var timer2 = null
+			//end_off：目标的偏移量  time:动画移动时间  end_off、time从外面传进来的参数
+			// debugger;
+			function PlayAnimation(end_off, time = 300) {
+				switchAnimation = false
+				var start_off = wrap.style.left
+					? parseFloat(wrap.style.left)
+					: 0 //wrap元素起始偏移量
+				var all_off = (end_off - start_off).toFixed(2) //总共要移动的偏移量
+				var step_off = parseFloat((all_off / 100).toFixed(4)) //每次移动偏移量
+				var step_tiem = time / 100 //每次移动间隔时间
+				//定时器开始
+				timer2 = setInterval(function () {
+					//每次运行，先检查wrap元素的当前偏移量有没有达到end_off目标的偏移量
+					var temp_wrapNowOff = wrap.style.left
+						? parseFloat(wrap.style.left)
+						: 0
+					//达到目标偏移量则清楚定时器，完成动画
+					if (temp_wrapNowOff == end_off) {
+						clearInterval(timer2)
+						switchAnimation = true
+					} //否则进行wrap元素偏移量赋值
+					else {
+						//每次在wrap元素的当前偏移量的基础上增加单次移动偏移量
+						wrap.style.left = temp_wrapNowOff + step_off + 'rem'
+					}
+				}, step_tiem) //间隔时间
+			}
+
+			//定时器的功能  （自动播放）
+			var timer = null
+			// 创建自动播放的函数，
+			function autoPlay() {
+				timer = setInterval(function () {
+					next_pic()
+				}, 2000)
+			}
+			autoPlay() // 调用这个函数
+
+			// 鼠标移入轮播图中，这时轮播图就不会播放了。而移开鼠标之后，轮播图自动播放。clearInterval()函数 当鼠标进入时就clear定时器，滑出再定时播放
+			var container = document.querySelector('.container')
+			container.onmouseenter = function () {
+				clearInterval(timer)
+			}
+			container.onmouseleave = function () {
+				autoPlay()
+			}
+
+			// 实现小圆点的功能
+			var index = 0
+			var dots = document.getElementsByTagName('span')
+			function showCurrentDot() {
+				for (var i = 0, len = dots.length; i < len; i++) {
+					dots[i].className = ''
+				}
+				dots[index].className = 'on' //设置第一个值为on
+			}
+
+			for (var i = 0, len = dots.length; i < len; i++) {
+				//这里的i值就是span的index值
+				;(function (i) {
+					dots[i].onclick = function () {
+						if (switchAnimation) {
+							index = i
+							// wrap.style.left=i*(-850)+"px"
+							PlayAnimation((i * -11.72).toFixed(2))
+							showCurrentDot()
+						}
+					}
+				})(i)
+			}
+		</script>
+	</body>
+
+</html>

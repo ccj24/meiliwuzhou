@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>梧州白云山公园</title>
+		<style>
+			.container {
+				width: 300px;
+				height: 300px;
+				/* border: 1px solid #000 ; */
+				margin: 150px auto;
+				perspective: 2000px;
+			}
+			.box {
+				width: 300px;
+				height: 300px;
+				/* 控制子元素，保持3d转换 */
+				transform-style: preserve-3d;
+				/* transform: rotateX(45deg) rotateY(45deg); */
+				animation: ro 4s linear infinite;
+			}
+			@keyframes ro {
+				0% {
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+				100% {
+					transform: rotateX(360deg) rotateY(360deg);
+				}
+			}
+			.box-page {
+				width: 300px;
+				height: 300px;
+				/*位置初始化*/
+				position: absolute;
+				transform-style: preserve-3d;
+			}
+			.top {
+				/* background-color: red; */
+				transform: translateZ(150px);
+			}
+			.bottom {
+				/* background-color: green; */
+				transform: translateZ(-150px) rotateX(180deg);
+			}
+			.left {
+				/* background-color: orange; */
+				transform: translateX(-150px) rotateY(-90deg);
+			}
+			.right {
+				/* background-color: pink; */
+				transform: translateX(150px) rotateY(90deg);
+			}
+			.before {
+				/* background-color: blue; */
+				transform: translateY(150px) rotateX(-90deg);
+			}
+			.after {
+				/* background-color: yellow; */
+				transform: translateY(-150px) rotateX(90deg);
+			}
+
+			.box-page div:nth-child(1) {
+				animation: a1 4.5s ease-in;
+			}
+			.box-page div:nth-child(2) {
+				animation: a1 4.5s ease-in 0.5s;
+			}
+			.box-page div:nth-child(3) {
+				animation: a1 4.5s ease-in 1s;
+			}
+			.box-page div:nth-child(4) {
+				animation: a1 4.5s ease-in 1.5s;
+			}
+			.box-page div:nth-child(5) {
+				animation: a1 4.5s ease-in 2s;
+			}
+			.box-page div:nth-child(6) {
+				animation: a1 4.5s ease-in 2.5s;
+			}
+			.box-page div:nth-child(7) {
+				animation: a1 4.5s ease-in 3s;
+			}
+			.box-page div:nth-child(8) {
+				animation: a1 4.5s ease-in 3.5s;
+			}
+			.box-page div:nth-child(9) {
+				animation: a1 4.5s ease-in 4s;
+			}
+			@keyframes a1 {
+				0% {
+					transform: translateZ(0px) scale(1) rotateZ(0deg);
+				}
+				20% {
+					transform: translateZ(300px) scale(0) rotateZ(720deg);
+				}
+				90% {
+					transform: translateZ(300px) scale(0) rotateZ(720deg);
+				}
+				100% {
+					transform: translateZ(0px) scale(1) rotateZ(0deg);
+				}
+			}
+			.bycontent {
+				margin-bottom: 0.7rem;
+				font-size: 0.2rem;
+				background-color: #f6f6f6;
+				padding-bottom: 0.3rem;
+			}
+			.bycontent img {
+				width: 4rem;
+				height: 4rem;
+			}
+
+			.contentleft {
+				float: left;
+				width: 50%;
+				margin-right: 20px;
+			}
+			.btcontent img {
+				float: left;
+				width: 2.1rem;
+				height: 2.5rem;
+				margin-right: 0.2rem;
+			}
+			.btcontent {
+				width: 9rem;
+				height: 2.5rem;
+				border: 0.01rem solid #000;
+				position: relative;
+				margin: 0.2rem auto;
+				overflow: hidden;
+			}
+			#list {
+				position: absolute;
+
+				left: 0;
+
+				top: 0;
+
+				margin: 0;
+
+				padding: 0;
+
+				animation: move 12s infinite linear;
+
+				-webkit-animation: move 12s infinite linear;
+
+				width: 500%;
+			}
+
+			#list li {
+				list-style: none;
+
+				width: 2.2rem;
+
+				height: 2.5rem;
+
+				border: 0;
+
+				float: left;
+			}
+
+			@-webkit-keyframes move {
+				0% {
+					left: 0;
+				}
+
+				100% {
+					left: 2.2rem;
+				}
+			}
+
+			@keyframes move {
+				0% {
+					left: 0;
+				}
+
+				100% {
+					left: -2.2rem;
+				}
+			}
+
+			#wrap:hover #list {
+				-webkit-animation-play-state: paused; /*动画暂停播放*/
+			}
+		</style>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/autorem.js"></script>
+	</head>
+
+	<body>
+		<div class="index">
+			<div class="console">
+				<div class="console_top">
+					<div class="shop_div">
+						<img class="shop_logo" src="img/logo.jpg" alt="" />
+						<p class="shop_name">百年商埠·魅力梧州</p>
+					</div>
+					<div class="userinfo">
+						<img class="userimg" src="img/user.jpeg" alt="" />
+						<p class="user_name">欢迎来到梧州</p>
+						<!-- <img class="sjx_icon" src="img/sjx.png" alt="" />
+                    <img class="power" src="img/power.png" alt="" /> -->
+					</div>
+				</div>
+				<div class="content">
+					<div class="menu">
+						<!-- 如果滚动条经过就用menu_titlediv2样式，正常就要menu_titlediv样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+						<a href="index.html">
+							<div class="menu_titlediv">
+								<img
+									class="menu_icon1"
+									src="img/menu_icon1.png"
+									alt=""
+								/>
+								<p class="menu_title">主页</p>
+							</div>
+						</a>
+
+						<div class="menu_main">
+							<!-- 如果滚动条经过就用mainlist2样式，正常就要mainlist样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouBYS.html">
+								<div class="mainlist2">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon2.png"
+										alt=""
+									/>
+									<p class="list_p">白云山景区</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+									<img
+										class="progress_bar"
+										src="img/menu_auto.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhoulm.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州龙母庙</p>
+								</div>
+							</a>
+
+							<!-- 如果滚动条经过就用mainlist_nr2样式，正常就要mainlist_nr样式，滚动条图片为 <img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouQL.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon4.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州骑楼城</p>
+									<!-- <img class="progress_bar" src="img/menu_auto.png" alt="" /> -->
+								</div>
+							</a>
+
+							<a href="wuzhouSBS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon5.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州风景</p>
+								</div>
+							</a>
+
+							<a href="wuzhouCH.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州苍海湖</p>
+								</div>
+							</a>
+
+							<a href="index.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon7.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州六堡茶</p>
+								</div>
+							</a>
+						</div>
+						<div class="menu_main">
+							<a href="wuzhouglg.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon8.png"
+										alt=""
+									/>
+									<p class="list_p">老字号特色小吃</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhouLJS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon9.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">李济深故居</p>
+								</div>
+							</a>
+
+							<a href="wuzhouWcity.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon10.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">永安王城</p>
+								</div>
+                            </a>
+                            <a href="future/ljgd.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">未来可期</p>
+								</div>
+                            </a>
+                            <a href="about.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">关于我</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="manage">
+						<div class="manage_nav_nr">
+							<img
+								class="nav_icon"
+								src="img/nav_icon.png"
+								alt=""
+							/>
+							<img class="nav_sjx" src="img/nav_sjx.png" alt="" />
+							<p class="nav_p">梧州白云山公园</p>
+						</div>
+						<div class="manage_content">
+							<div class="manage_divs">
+								<div class="store_info">
+									<div class="store_info_top">
+										<div class="store_info_squre"></div>
+										<p class="store_info_top_p">
+											晓露乍薄初日上，晚烟如幂夕阳低
+										</p>
+									</div>
+									<div class="store_nr" style="  border-top: 0.02rem solid #f1f1f1;
+                                    padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+                                    position: relative;">
+										<!-- 白云山魔方 -->
+										<div class="container">
+											<div class="box">
+												<div class="box-page top"></div>
+												<div
+													class="box-page bottom"
+												></div>
+												<div
+													class="box-page left"
+												></div>
+												<div
+													class="box-page right"
+												></div>
+												<div
+													class="box-page before"
+												></div>
+												<div
+													class="box-page after"
+												></div>
+											</div>
+										</div>
+
+										<!-- 白云山内容1 -->
+										<div style="height: 0.6rem;">
+											<img
+												style="
+													float: left;
+													line-height: 0.4rem;
+													margin-top: 0.1rem;
+													margin-right: 0.1rem;
+												"
+												src="img/intro_icon.png"
+												alt=""
+											/>
+											<p
+												style="
+													font-size: 0.2rem;
+													line-height: 0.4rem;
+												"
+											>
+												最新信息
+											</p>
+										</div>
+										<div class="bycontent">
+											<div class="contentleft">
+												<img
+													src="./img/bys3.jpg"
+													alt=""
+												/>
+												<p
+													style="
+														color: #000000;
+														font-weight: 600;
+														border-bottom: 1px solid
+															#ebebeb;
+														width: 3.8rem;
+														padding-bottom: 0.2rem;
+														margin: 0 0.2rem;
+														padding-top: 0.3rem;
+													"
+												>
+													<a
+														href="http://wap.bytravel.cn/Landscape/21/baiyunshangongyuan.html"
+														>梧州万秀区白云山公园旅游指南</a
+													>
+												</p>
+
+												<p
+													style="
+														padding-bottom: 0.2rem;
+														padding-right: 0.5rem;
+														padding-top: 0.3rem;
+														padding-left: 0.2rem;
+													"
+												>
+													白云山公园位于梧州市区东北方。白云山遥连五岭，总纳三江，至梧州突而挺起，蜿蜒盘桓，气势磅礴。站在山顶俯瞰远眺，
+													全城风光，远方景物尽收眼底。山上树木参天，晨雾迷漫。在雨后初晴之际，素洁云雾，缭绕飘忽。
+													高耸的白云山就象戴上白面纱，披上白围巾的绿衣少女。唐代诗人孟浩然有诗云：“苍梧白云远，烟水洞庭深。
+													”清代诗人李世瑞作诗说：“晓露乍薄初日上，晚烟如幂夕阳低。”白云山为梧州八景之一，称作云岭晴岚。
+												</p>
+											</div>
+
+											<div class="contentright">
+												<img
+													src="./img/bys8.jpg"
+													alt=""
+												/>
+												<div
+													style="
+														color: #000000;
+														font-weight: 600;
+														border-bottom: 1px solid
+															#ebebeb;
+														width: 3.8rem;
+														padding-bottom: 0.2rem;
+														margin: 0 0.2rem;
+														padding-top: 0.3rem;
+														float: left;
+													"
+												>
+													<a
+														href="http://www.s18.cn/Bus/Wuzhou/50562757.htm"
+														>梧州白云山公园_白云山公园公交指南</a
+													>
+												</div>
+
+												<p
+													style="
+														padding-bottom: 0.2rem;
+														padding-right: 0.5rem;
+														padding-top: 1.1rem;
+														padding-left: 0.2rem;
+													"
+												>
+													白云山东麓山腰处，是有名的“老虎头”，此处山石峥嵘，地形险峻，恰如一只伏卧的猛虎。从风筝亭往北走，有一片桃林。
+													春天桃花盛开时，到这里赏花的人很多，争相拍照留影，正所谓“人面桃花相映红”。远处不时有鸟从树林中飞起，清脆的叫声在山谷中回响。
+													过桃林，上山岗，到了双清亭。亭下面，有一个栩栩如生的老虎雕塑，面对滔滔松海在长啸，好一幅松涛虎啸图。
+													到了节假日，这里游人如织。重阳节，山上更是人头涌涌，数万人登高，热闹非凡
+												</p>
+											</div>
+										</div>
+										<!-- 白云山内容2 -->
+										<div style="height: 0.6rem;">
+											<img
+												style="
+													float: left;
+													line-height: 0.4rem;
+													margin-top: 0.1rem;
+													margin-right: 0.1rem;
+												"
+												src="img/intro_icon.png"
+												alt=""
+											/>
+											<p
+												style="
+													font-size: 0.2rem;
+													line-height: 0.4rem;
+												"
+											>
+												圆桌讨论
+											</p>
+										</div>
+										<div class="bycontent">
+											<div class="contentleft">
+												<img
+													src="./img/bys5.jpg"
+													alt=""
+												/>
+												<p
+													style="
+														padding-bottom: 0.2rem;
+														padding-right: 0.5rem;
+														padding-top: 0.3rem;
+													"
+												>
+													白云山公园位于梧州市区东北方。白云山遥连五岭，总纳三江，至梧州突而挺起，蜿蜒盘桓，气势磅礴。站在山顶俯瞰远眺，
+													全城风光，远方景物尽收眼底。山上树木参天，晨雾迷漫。在雨后初晴之际，素洁云雾，缭绕飘忽。
+													高耸的白云山就象戴上白面纱，披上白围巾的绿衣少女。唐代诗人孟浩然有诗云：“苍梧白云远，烟水洞庭深。
+													”清代诗人李世瑞作诗说：“晓露乍薄初日上，晚烟如幂夕阳低。”白云山为梧州八景之一，称作云岭晴岚。
+												</p>
+											</div>
+
+											<div class="contentright">
+												<img
+													src="./img/bys6.jpg"
+													alt=""
+												/>
+												<p
+													style="
+														padding-bottom: 0.2rem;
+														padding-right: 0.5rem;
+														padding-top: 0.3rem;
+													"
+												>
+													白云山东麓山腰处，是有名的“老虎头”，此处山石峥嵘，地形险峻，恰如一只伏卧的猛虎。从风筝亭往北走，有一片桃林。
+													春天桃花盛开时，到这里赏花的人很多，争相拍照留影，正所谓“人面桃花相映红”。远处不时有鸟从树林中飞起，清脆的叫声在山谷中回响。
+													过桃林，上山岗，到了双清亭。亭下面，有一个栩栩如生的老虎雕塑，面对滔滔松海在长啸，好一幅松涛虎啸图。
+													到了节假日，这里游人如织。重阳节，山上更是人头涌涌，数万人登高，热闹非凡
+												</p>
+											</div>
+										</div>
+
+										<!-- 白云山内容3 -->
+										<div style="height: 0.6rem;">
+											<img
+												style="
+													float: left;
+													line-height: 0.4rem;
+													margin-top: 0.1rem;
+													margin-right: 0.1rem;
+												"
+												src="img/sound.png"
+												alt=""
+											/>
+											<p
+												style="
+													font-size: 0.2rem;
+													line-height: 0.4rem;
+												"
+											>
+												专栏
+											</p>
+										</div>
+										<div
+											class="btcontent"
+											style="
+												margin-bottom: 0.5rem;
+												background-color: #f6f6f6;
+											"
+										>
+											<ul id="list">
+												<li>
+													<a href="#"
+														><img
+															src="./img/bys0.jpg"
+															border="0"
+													/></a>
+												</li>
+
+												<li>
+													<a href="#"
+														><img
+															src="./img/bys1.jpg"
+															border="0"
+													/></a>
+												</li>
+
+												<li>
+													<a href="#"
+														><img
+															src="./img/bys2.jpg"
+															border="0"
+													/></a>
+												</li>
+
+												<li>
+													<a href="#"
+														><img
+															src="./img/bys3.jpg"
+															border="0"
+													/></a>
+												</li>
+
+												<li>
+													<a href="#"
+														><img
+                                                            src="./img/bys4.jpg"
+															border="0"
+													/></a>
+                                                </li>
+                                                <li>
+													<a href="#"
+														><img
+                                                            src="./img/bys6.jpg"
+															border="0"
+													/></a>
+                                                </li>
+                                                <li>
+													<a href="#"
+														><img
+                                                            src="./img/bys7.jpg"
+															border="0"
+													/></a>
+                                                </li>
+                                                <li>
+													<a href="#"
+														><img
+                                                            src="./img/bys8.jpg"
+															border="0"
+													/></a>
+												</li>
+												
+
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="store_info2">
+                                    <!-- 白云山云峰亭 -->
+									<div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon"
+												src="img/intro_icon.png"
+												alt=""
+											/>
+											<p class="about_p">
+												白云山云峰亭
+											</p>
+										</div>
+										<div class="about_nr">
+											<div class="about_text">
+                                                云峰亭位于白云山的最高峰，也是梧州市区的最高点，海拔368米。此处可以观赏到 “梧州八景”之一的“云岭晴岚”景观。
+                                                雨后初晴之际，白云山上云遮雾障，水气蒸腾，山峦隐现，若浮云海；游人登临云峰亭，极目四方，但见群山环拱，田畴锦绣，三江水口烟波浩淼，梧州市貌尽收眼底，令人心旷神怡。
+                                                云峰亭是在原山顶的炮台基础上改建而成，建有观景台和八角亭。观景台前粉壁，有原广西省人民政府主席、中央农垦部副部长、
+                                                中共中央顾问委员会委员陈漫远先生于1984年6月23日登白云山时所作的《登梧州白云山》，诗云：“绝顶树葱茏，登临八面风。思潮随水远，汩汩颂英雄。”
+											</div>
+										</div>
+                                    </div>
+                                    <!--  白云山四恩寺-->
+									<div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon2"
+												src="img/sound.png"
+												alt=""
+											/>
+											<p class="about_p">
+												白云山四恩寺
+											</p>
+										</div>
+										<div class="about_nr">
+											<div class="about_text">
+                                                坐落在白云山景区的半山腰处，西江宛如玉带在其前方蜿蜒而过，是梧州市的佛教圣地，更是享誉东南亚的佛教圣地。前身是位于广西梧州钱鉴的紫竹林寺，
+                                                始建于1939年，及至20世纪90年代，因城市发展需要，原址被征用。2001年，紫竹林寺于白云山南麓异地重建。新址于2001年八月奠基，是岭南现代第一寺，
+                                                占地65.7亩，总建筑面积18000平方米，整个古建筑群仿明清风格，气势磅礴，符合阴阳宇宙观和对称、稳重的审美观。整个佛寺规划格局呈现为七个平台，
+                                                寓含"胜造七级浮屠"之意。规划建筑有上山进寺台阶、天王殿、韦驮殿、钟楼、鼓楼、大雄宝殿、东厢房、西厢房、观音殿、地藏殿、
+                                                法堂、文殊殿、普贤殿、藏经楼、宝塔、阅经亭等。由中国佛教协会会长赵扑初先生提名为“四恩寺”，意取佛教的“上报四重恩，下济三途苦”这两句话，即报答“父母恩、国家恩、众生恩和三宝恩”这四重恩。
+											</div>
+										</div>
+                                    </div>
+                                    <!-- 云岭晴岚 -->
+                                    <div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon2"
+												src="img/sound.png"
+												alt=""
+											/>
+											<p class="about_p">
+												白云山云岭晴岚
+											</p>
+										</div>
+										<div class="about_nr">
+											<div class="about_text">
+                                                云岭晴岚＂是梧州八景之一。＂云岭＂指的是白云山，它海拔368米，是梧州市第一高峰。登顶远眺，有＂一览众山小＂之感。
+                                                ＂晴岚＂是指雨后初晴时，青山绿溶溶，云雾缭绕，美不胜收。故曰：＂云岭晴岚＂。唐代诗人孟浩然有曰：＂苍梧白云远，烟水洞庭深。＂清代诗人李世瑞亦有诗曰：
+                                                ＂翘首城东望眼齐，新晴岚气古蛮溪，几重高楼通星北，一抹遥连挂榜西。晓露乍溥初日上，晚烟如幂夕阳低。佳哉郁郁葱葱处，遗老徒闻觅锦鸡。＂这就是对＂云岭晴岚＂作仙境般的描述和赞美，使之在古今闻名于世。
+											</div>
+										</div>
+                                    </div>
+                                    <div class="about">
+										<div class="about_top">
+											<img
+												class="about_icon2"
+												src="img/sound.png"
+												alt=""
+											/>
+											<p class="about_p">
+												白云山云神鹿台
+											</p>
+										</div>
+										<div class="about_nr">
+											<div class="about_text">
+                                                从白云山南麓入口处上山，先沿登山石径上行数百米，再从小路拐入松林深处，便到达粗朴砖块筑的神鹿台。
+                                                上首座基的双鹿雕塑颇引人注目。细读镶嵌在砖壁上的《神鹿台记》碑刻，一个悲壮的千古传说令人感慨，游人无不向神鹿虔诚致敬。相传舜帝南巡时，有双鹿相伴左右，至苍梧之野舜帝不幸病故，
+                                                “万民大恸，双鹿尤为悲切，绕山疾驶，啾啾悲鸣，哀哀三日，声闻九天”，
+                                                后来悲痛欲绝跳下白云山下的桂江逆流而上，“途遇娥皇、女英二妃，跪报噩耗”，二妃听到噩耗悲恸万分、伤心的眼泪洒落在竹子上，竹子便挂上了她们斑斑点点的泪痕，成了斑竹，被称为湘妃竹，最后 “投湘水殉帝，双鹿随之”。
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img class="erweima_img" src="./img/qrcode.png" alt="" />
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var arr = document.querySelectorAll('.box-page')
+			//  遍历6个页面中的每一个
+			for (var n = 0; n < arr.length; n++) {
+				//外层循环行
+				for (var r = 0; r < 3; r++) {
+					//内层循环遍历列
+					for (var c = 0; c < 3; c++) {
+						//创建元素
+						var divs = document.createElement('div')
+						divs.style.cssText =
+							'width:100px;height:100px;border:2px solid #fff;box-sizing:border-box; position:absolute;background-image:url(img/bys' +
+							n +
+							'.jpg);background-size:300px 300px'
+						arr[n].appendChild(divs)
+
+						divs.style.left = c * 100 + 'px'
+						divs.style.top = r * 100 + 'px'
+
+						divs.style.backgroundPositionX = c * 100 + 'px'
+						divs.style.backgroundPositionY = c * 100 + 'px'
+					}
+				}
+				arr[n]
+			}
+		</script>
+	</body>
+
+</html>

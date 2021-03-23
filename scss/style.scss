@@ -1,0 +1,1437 @@
+@import "base";
+
+.index {
+    .loading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #0e268b;
+        background-image: url(../img/bg.png);
+        background-position: 0 bottom;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        .load_div {
+            position: absolute;
+            top: size(155);
+            right: size(440);
+
+            .load {
+                background-color: #ffffff;
+                padding: size(40) size(30) size(18) size(30);
+                margin-bottom: size(20);
+
+                .load_title {
+                    color: #333333;
+                    font-size: size(18);
+                    margin-bottom: size(38);
+                    letter-spacing: size(2);
+                    font-family: "MicrosoftYaHei";
+                }
+
+                .accountNumber,
+                .password {
+                    width: size(292);
+                    display: block;
+                    line-height: size(50);
+                    border: solid size(1) #999999;
+                    border-radius: size(3);
+                    color: #333333;
+                    font-size: size(16);
+                    outline: 0;
+                    padding: 0 size(10);
+                    margin-bottom: size(20);
+                }
+
+                .password {
+                    margin-bottom: size(9)
+                }
+
+                .hint {
+                    color: #f90000;
+                    font-size: size(14);
+                    padding-left: size(2);
+                }
+
+                .btn {
+                    margin-top: size(26);
+
+                    background-color: #10b7fd;
+                    border-radius: size(3);
+                    line-height: size(50);
+                    text-align: center;
+                    color: #ffffff;
+                    font-family: "MicrosoftYaHei";
+                    font-size: size(18);
+                }
+
+                .choose_div {
+                    margin-top: size(30);
+                    display: flex;
+                    justify-content: space-between;
+                    color: #818b97;
+
+                    .remember {
+                        overflow: hidden;
+
+                        .remember_icon {
+                            width: size(14);
+                            height: size(14);
+                            float: left;
+                            margin-right: size(6);
+                            margin-top: size(2);
+                        }
+
+                        .remember_p {
+                            float: left;
+                            font-size: size(14);
+                        }
+                    }
+
+                    .forget_p {
+
+                        font-size: size(14);
+                    }
+                }
+            }
+
+            .download {
+                line-height: size(50);
+                background-color: #ffffff;
+                text-align: center;
+                font-size: size(18);
+                letter-spacing: size(2);
+                color: #10b7fd;
+            }
+
+
+        }
+
+        .erweima_div {
+            position: absolute;
+            top: size(155);
+            right: size(450);
+
+            .erweima {
+                background-color: #ffffff;
+                padding: size(37) size(50) size(42) size(50);
+                margin-bottom: size(20);
+
+                .erweima_title {
+                    color: #1cbcff;
+                    font-size: size(36);
+                    text-align: center;
+                    margin-bottom: size(14);
+                }
+
+                .erweima_icon {
+                    width: size(253);
+                    height: size(253);
+                }
+            }
+
+            .download {
+                line-height: size(50);
+                background-color: #ffffff;
+                text-align: center;
+                font-size: size(18);
+                letter-spacing: size(2);
+                color: #10b7fd;
+            }
+        }
+    }
+
+    .console {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url(../img/bg3.png);
+        background-position: 0 0;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        .console_top {
+            padding-left: size(30);
+            padding-right: size(52);
+            display: flex;
+            justify-content: space-between;
+
+            .shop_div {
+                overflow: hidden;
+
+                .shop_logo {
+                    width: size(50);
+                    height: size(50);
+                    margin-right: size(13);
+                    border-radius: size(100);
+                    float: left;
+                    margin-top: size(15);
+                    margin-bottom: size(15);
+                }
+
+                .shop_name {
+                    float: left;
+                    color: #ffffff;
+                    font-size: size(18);
+                    margin-top: size(31);
+                    margin-bottom: size(30);
+                }
+            }
+
+            .userinfo {
+                overflow: hidden;
+
+                .userimg {
+                    float: left;
+                    width: size(40);
+                    height: size(40);
+                    margin-top: size(20);
+                    margin-right: size(12);
+                    margin-bottom: size(20);
+                    border-radius: size(100);
+                }
+
+                .user_name {
+                    float: left;
+                    color: #ffffff;
+                    font-size: size(18);
+                    margin-top: size(31);
+                    margin-right: size(32);
+                    margin-bottom: size(30);
+                }
+
+                .sjx_icon {
+                    float: left;
+                    width: size(12);
+                    height: size(7);
+                    margin-top: size(36);
+                    margin-right: size(65);
+                    margin-bottom: size(37);
+                }
+
+                .power {
+                    float: left;
+                    width: size(18);
+                    height: size(22);
+                    margin-top: size(29);
+                    margin-bottom: size(29);
+                }
+            }
+        }
+
+        .content {
+            margin-left: size(30);
+             height: 100%;
+             overflow: hidden;
+
+
+            .menu {
+
+                margin-top: size(50);
+                margin-right: size(30);
+                float: left;
+                padding-bottom: size(150);
+
+                .menu_titlediv,
+                .menu_titlediv2 {
+                    overflow: hidden;
+                    background-color: #173c80;
+                    padding: 0 size(27);
+                    border-radius: size(4);
+
+                    .menu_icon1 {
+                        width: size(18);
+                        height: size(18);
+                        margin-right: size(17);
+                        float: left;
+                        padding: size(14) 0;
+                    }
+
+                    .menu_title {
+                        float: left;
+                        color: #ffffff;
+                        font-size: size(16);
+                        padding: size(14) 0;
+                    }
+                }
+
+                .menu_titlediv2 {
+                    position: relative;
+                    background-color: #183366;
+
+                    .progress_bar {
+                        position: absolute;
+                        left: 0;
+                        top: size(4);
+                        width: size(11);
+                        height: size(42);
+                    }
+                }
+
+                .menu_main {
+                    background-color: #173c80;
+
+                    border-radius: size(4);
+                    margin-top: size(2);
+
+                    .mainlist,
+                    .mainlist2 {
+                        overflow: hidden;
+                        padding: 0 size(27);
+                        position: relative;
+
+                        .progress_bar {
+                            position: absolute;
+                            left: 0;
+                            top: size(0);
+                            width: size(11);
+                            height: size(42);
+                        }
+
+                        .menu_icon2 {
+                            width: size(19);
+                            height: size(17);
+                            margin-right: size(16);
+                            margin-top: size(20);
+                            float: left;
+                        }
+
+                        .list_p {
+                            float: left;
+                            color: #ffffff;
+                            font-size: size(16);
+                            margin-right: size(41);
+                            margin-top: size(15);
+                            margin-bottom: size(15);
+                        }
+
+                        .show {
+                            float: left;
+                            width: size(21);
+                            height: size(12);
+                            margin-top: size(20);
+                        }
+                    }
+
+                    .mainlist2 {
+                        position: relative;
+                        background-color: #183366;
+
+                        .progress_bar {
+                            position: absolute;
+                            left: 0;
+                            top: size(4);
+                            width: size(11);
+                            height: size(42);
+                        }
+                    }
+
+                    .mainlist_nr,
+                    .mainlist_nr2 {
+                        padding-left: size(33);
+                        padding: 0 size(27);
+                        overflow: hidden;
+
+                        .menu_icons {
+                            float: left;
+                            width: size(18);
+                            height: size(18);
+                            margin-right: size(19);
+                            margin-top: size(18);
+                        }
+
+                        .mainlist_nrp {
+                            float: left;
+                            color: #ffffff;
+                            font-size: size(14);
+                            margin-top: size(13);
+                            margin-bottom: size(13);
+                        }
+                    }
+
+                    .mainlist_nr2 {
+                        position: relative;
+                        background-color: #183366;
+
+                        .progress_bar {
+                            position: absolute;
+                            left: 0;
+                            top: size(4);
+                            width: size(11);
+                            height: size(42);
+                        }
+                    }
+                }
+            }
+
+            .manage {
+               // float: left;
+               overflow: hidden;
+                padding-bottom: size(120);
+                height: 100%;
+                position: relative;
+
+                .manage_nav_nr {
+                    overflow: hidden;
+                    padding-left: size(50);
+                    background-color: #ffffff;
+                    position: relative;
+
+                    .nav_icon {
+                        float: left;
+                        width: size(18);
+                        height: size(14);
+                        padding: size(18) size(19) size(0) size(16);
+                    }
+
+                    .nav_sjx {
+                        position: absolute;
+                        left: size(0);
+                        bottom: 0;
+                        width: size(50);
+                        height: size(50);
+                        z-index: 5;
+                        box-shadow: 0 0 size(13) 0 rgba(6, 0, 1, 0.27);
+
+                    }
+
+                    .nav_p {
+                        float: left;
+                        color: #333333;
+                        font-size: size(18);
+                        line-height: size(50);
+                    }
+                    
+                }
+
+        
+
+                .manage_content {
+                    background-color: #e1ebf2;
+                    overflow: auto;
+                   height: 82%;
+                   position: relative;
+
+                    .manage_divs {
+                        overflow: hidden;
+                       padding: size(30) size(50);
+                       position: relative;
+                 
+                        .order_div {
+                            margin-bottom: size(200);
+                            float: left;
+                            background-color: #ffffff;
+                            box-shadow: 0 0 size(5) 0 rgba(171, 171, 171, 0.42);
+                            border-radius: size(4);
+                            //width: size(308);
+                            min-height: size(485);
+                            margin-right: size(35);
+                            padding-bottom: size(30);
+
+                            .order_titleDiv {
+                                padding: 0 size(24);
+                                overflow: hidden;
+
+                                .order_square {
+                                    width: size(4);
+                                    height: size(20);
+                                    float: left;
+                                    background-color: #407ac1;
+                                    margin-right: size(18);
+                                    margin-top: size(20);
+                                }
+
+                                .order_title {
+                                    float: left;
+                                    color: #333333;
+                                    font-size: size(18);
+                                    line-height: size(60);
+                                }
+                            }
+
+                            .order_nr {
+                                padding: size(24) size(24) 0 size(24);
+                                border-top: solid size(2) #f1f1f1;
+
+                                .order_nr_box {
+                                    background-color: #f0f6f9;
+                                    border-radius: size(4);
+                                    overflow: hidden;
+                                    padding: 0 size(24);
+                                    margin-bottom: size(4);
+
+                                    .order_img {
+                                        float: left;
+                                        width: size(80);
+                                        height: size(80);
+                                        margin-right: size(41);
+                                        padding: size(20) 0;
+                                        border-radius: size(100);
+
+                                    }
+
+                                    .order_nr_boxp {
+                                        float: left;
+
+                                        .order_count,
+                                        .order_count2 {
+                                            color: #24a5e8;
+                                            font-size: size(40);
+                                            text-align: center;
+                                            margin-top: size(24);
+                                        }
+
+                                        .order_count2 {
+                                            color: #ed6615;
+                                        }
+
+                                        .order_state {
+                                            color: #333333;
+                                            font-size: size(14);
+                                            // margin-top: size(14);
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .detailes {
+                            margin-bottom: size(180);
+                            // float: left;
+                            //width: size(1177);
+                            overflow: hidden;
+
+                            .detailes_box {
+                                margin-bottom: size(35);
+                                box-shadow: 0 0 size(5) 0 rgba(171, 171, 171, 0.42);
+                                border-radius: size(4);
+                                background-color: #ffffff;
+
+                                .detailes_top {
+                                    padding: 0 size(24);
+                                    overflow: hidden;
+
+                                    .detaiels_square {
+                                        width: size(4);
+                                        height: size(20);
+                                        float: left;
+                                        background-color: #407ac1;
+                                        margin-right: size(18);
+                                        margin-top: size(20);
+                                    }
+
+                                    .detailes_top_text {
+                                        color: #333333;
+                                        font-size: size(18);
+                                        line-height: size(60);
+                                        float: left;
+                                    }
+                                }
+
+                                .detailes_nr {
+                                    padding-left: size(107);
+                                    padding-right: size(209);
+                                    border-top: solid size(2) #f1f1f1;
+                                    overflow: hidden;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .detailes_logo {
+                                        float: left;
+                                        width: size(80);
+                                        height: size(80);
+                                        margin-top: size(48);
+                                        margin-bottom: size(48);
+                                    }
+
+                                    .detailes_nrtext {
+
+                                        .detailes_money,
+                                        .detailes_money2,
+                                        .detailes_money3 {
+                                            color: #24a5e8;
+                                            font-size: size(40);
+                                            margin-bottom: size(10);
+                                            margin-top: size(48);
+                                            text-align: center;
+                                        }
+
+                                        .detailes_money2 {
+                                            color: #0fba23;
+                                        }
+
+                                        .detailes_money3 {
+                                            color: #ed6a1c;
+                                        }
+
+                                        .detailes_money_p {
+                                            color: #333333;
+                                            font-size: size(14);
+                                            margin-bottom: size(49);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .store_info {
+                            margin-bottom: size(60);
+                            margin-bottom: size(200);
+                            width: size(1033);
+                            float: left;
+                            margin-right: size(37);
+                            background-color: #ffffff;
+                            box-shadow: 0 0 size(5) 0 rgba(171, 171, 171, 0.42);
+
+                            .store_info_top {
+                                overflow: hidden;
+
+                                .store_info_squre {
+                                    width: size(4);
+                                    height: size(20);
+                                    background-color: #407ac1;
+                                    float: left;
+                                    margin: size(16) size(17) size(0) size(27)
+                                }
+
+                                .store_info_top_p {
+                                    float: left;
+                                    color: #333333;
+                                    font-size: size(18);
+                                    line-height: size(52);
+                                }
+                            }
+
+                            .store_nr {
+                                border-top: size(2) solid #f1f1f1;
+                                padding: size(30) size(30) size(70) size(79);
+                                position: relative;
+
+                                .storename_div {
+                                    overflow: hidden;
+                                    margin-bottom: size(21);
+
+                                    .store_namehint {
+                                        float: left;
+                                        color: #999999;
+                                        font-size: size(16);
+                                        line-height: size(42);
+                                        margin-right: size(28);
+                                    }
+
+                                    .store_nameinput,
+                                    .store_nameinput2 {
+                                        min-width: size(340);
+                                        color: #333333;
+                                        font-size: size(16);
+                                        float: left;
+                                        border: solid size(1) #1cbcff;
+                                        line-height: size(42);
+                                        padding: 0 size(10);
+                                        outline: 0;
+                                    }
+
+                                    .store_nameinput2 {
+                                        border: solid size(1) #cfcfcf;
+                                    }
+
+
+                                }
+
+                                .storehave_div,
+                                .storehave_div2 {
+                                    margin-bottom: size(21); //38
+                                    overflow: hidden;
+
+                                    .store_logohint {
+                                        float: left;
+                                        color: #999999;
+                                        font-size: size(16);
+                                        margin-right: size(28);
+                                    }
+
+                                    .store_logodiv {
+                                        overflow: hidden;
+
+                                        .store_logo {
+                                            float: left;
+                                            width: size(80);
+                                            height: size(80);
+                                            margin-right: size(12);
+                                        }
+
+                                        .storehave_btndiv {
+                                            float: left;
+                                            padding-top: size(20);
+
+                                            .btndiv {
+                                                background-color: #1cbcff;
+                                                border-radius: size(4);
+                                                text-align: center;
+                                                padding: 0 size(24);
+                                                line-height: size(30);
+                                                color: #ffffff;
+                                                font-size: size(16);
+                                                margin-bottom: size(8);
+                                                float: left;
+                                            }
+
+                                            .btndiv_hint {
+                                                clear: both;
+                                                color: #dddddd;
+                                                font-size: size(14);
+                                            }
+                                        }
+
+                                    }
+                               
+
+                                    .select {
+                                        float: left;
+
+                                        .select_div:last-child {
+                                            border-bottom: solid size(1) #1cbcff;
+                                        }
+
+                                        .select_div:first-child {
+                                            border-top: solid size(1) #1cbcff;
+                                        }
+
+                                        .select_div,
+                                        .select_div2 {
+                                            width: size(340);
+                                            font-size: size(16);
+                                            line-height: size(43);
+                                            min-height: size(43);
+                                            padding: 0 size(10);
+                                            border: solid size(1) #1cbcff;
+                                            color: #333333;
+                                            border-top: 0;
+                                            border-bottom: 0;
+                                            position: relative;
+
+                                            .select_icon {
+                                                position: absolute;
+                                                right: size(17);
+                                                top: size(15);
+                                                width: size(20);
+                                                height: size(11);
+                                            }
+                                        }
+
+                                        .select_div2 {
+                                            color: #ffffff;
+                                            background-color: #1cbcff;
+
+
+                                        }
+                                    }
+
+                                    .business {
+                                        float: left;
+                                        width: size(120);
+                                        height: size(80);
+                                    }
+
+                                }
+
+                                .storehave_div2 {
+                                    margin-bottom: size(21);
+                                }
+
+                                .store_nr_surebtn {
+                                    background-color: #1cbcff;
+                                    border-radius: size(4);
+                                    padding: 0 size(59);
+                                    color: #ffffff;
+                                    line-height: size(55);
+                                    font-size: size(20);
+                                    text-align: center;
+                                    position: absolute;
+                                    bottom: size(20);
+                                    left: size(188);
+                                }
+                            }
+                        }
+
+                        .store_info2 {
+                            overflow: hidden;
+                            margin-bottom: size(200);
+                            // float: left;
+                            //width: size(450);
+                            .about {
+                                margin-bottom: size(35);
+                                background-color: #ffffff;
+                                box-shadow: 0 0 size(5) 0 rgba(171, 171, 171, 0.42);
+
+                                .about_top {
+                                    overflow: hidden;
+
+                                    .about_icon,
+                                    .about_icon2 {
+                                        float: left;
+                                        width: size(20);
+                                        height: size(23);
+                                        padding-right: size(12);
+                                        padding: size(15) size(12) size(0) size(13)
+                                    }
+
+                                    .about_icon2 {
+                                        width: size(21);
+                                        height: size(25);
+                                    }
+
+                                    .about_p {
+                                        float: left;
+                                        color: #333333;
+                                        font-size: size(18);
+                                        line-height: size(52);
+                                    }
+                                }
+
+                                .about_nr {
+                                    border-top: solid size(2) #f1f1f1;
+                                    padding: size(27) size(25);
+
+                                    .about_text {
+                                        border: solid size(1) #1cbcff;
+                                        padding: size(22) size(45) size(22) size(31);
+                                        min-height: size(228);
+                                        color: #666666;
+                                        font-size: size(16);
+                                        line-height: size(24);
+
+
+                                    }
+                                }
+                            }
+
+                            .about:last-child {
+                                margin-bottom: size(0);
+                            }
+                        }
+                        .control_fixed{
+                            position: absolute;
+                            left: size(0);
+                            top: size(0);
+                            right: size(0);
+                            z-index: 1;
+                            .control_top{
+                                overflow: hidden;
+                                padding-bottom: size(40);
+                                background-color: #ffffff;
+                                padding-left: size(50);
+                                padding-top: size(22);
+                                .search_div{
+                                    float: left;
+                                    overflow: hidden;
+                                    .search{
+                                        border:solid size(1)  #cfcfcf;
+                                        line-height: size(34);
+                                        padding: 0 size(25);
+                                        color: #cecece;
+                                        font-size:size(14);
+                                        width: size(420);
+                                        float: left;
+                                    }
+                                    .search_btn{
+                                        float: left;
+                                        padding: 0 size(31);
+                                        line-height: size(34);
+                                        text-align: center;
+                                        background-color: #12b7f5;
+                                    border-radius: 0 size(4) size(4) 0;
+                                    color: #ffffff;
+                                    font-size: size(16);
+                                    }
+                                }
+                                .sendbtn{
+                                    margin-right: size(50);
+                                    float: right;
+                                    padding: 0 size(52);
+                                    color: #ffffff;
+                                    font-size: size(16);
+                                    text-align: center;
+                                    line-height: size(34);
+                                    background-color: #12b7f5;
+                                    border-radius: size(4);
+                                }
+                               
+                            }
+                            .constrol_nav{
+                                overflow: hidden;
+                                background-color: #ffffff;
+                                .navtitle,.navtitle2{
+                                    color: #333333;
+                                    font-size:size(16);
+                                    line-height: size(50);
+                                    background-color: #ffffff;
+                                    text-align: center;
+                                    min-width: size(210);
+                                    float: left;
+                                }
+                                .navtitle2{
+                                    color: #3f86dd;
+                                    background-color: #e1ebf2;
+                                }
+                            }
+                        }
+                       
+                        .constrol_nr,.constrol_nr2{
+                            padding-top: size(130);
+                            padding-left: size(50);
+                            padding-right: size(52);
+                           margin-bottom: size(180);
+                            padding-bottom: size(50);
+                            .constrol_chiose{
+                                padding-top: size(42);
+                                padding-bottom: size(16);
+                                overflow: hidden;
+                                .allchiose,.allchiose2{
+                                    padding: size(0) size(49) size(0) size(31);
+                                    overflow: hidden;
+                                    float: left;
+                                    .outer_ring{
+                                        width: size(16);
+                                        height: size(16);
+                                        border:solid size(2) #b4b4b4;
+                                        border-radius: size(100);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        float: left;
+                                        margin-right: size(8);
+                                        margin-top: size(2);
+                                        .inside_ring,.inside_ring2{
+                                           
+                                            width: size(10);
+                                         height: size(10);
+                                            border-radius: size(100);
+                                            background-color: #12b7f5;
+                                        }
+                                        .inside_ring2{
+                                            background-color: #bcbdbe;
+                                        }
+                                    }
+                                    .allchiose_p{
+                                        float: left;
+                                        color: #707070;
+                                        font-size:size(16);
+                                    }
+                                }
+                                .allchiose2{
+                                    margin-right: size(29);
+                                    padding: 0;
+                                    .inside_ring2{
+                                        background-color: #bcbdbe;
+                                    }
+                                }
+                                .chiosebox{
+                                    overflow: hidden;
+                                    float: left;
+                                    margin-right: size(29);
+                                    .chiosebox_icon{
+                                        float: left;
+                                        width: size(16);
+                                        height: size(16);
+                                        margin-right: size(6);
+                                        margin-top: size(3);
+                                    }
+                                    .chiosebox_p{
+                                        float: left;
+                                        color: #12b7f5;
+                                        font-size:size(16);
+                                    }
+                                }
+                                .addstroe_btn{
+                                    padding: 0 size(52);
+                                    float: right;
+                                    line-height: size(34);
+                                    text-align: center;
+                                    background-color: #12b7f5;
+                                    border-radius: size(4);
+                                    color: #ffffff;
+                                    font-size: size(16);
+                                }
+                            }
+                            .constrol_store{
+                                background-color: #ffffff;
+                                border:solid size(1) #e8e8e8;
+                                overflow: hidden;
+                                padding: size(31);
+                                margin-bottom: size(10);
+                               .store_outer{
+                                width: size(16);
+                                height: size(16);
+                                border:solid size(2) #b4b4b4;
+                                border-radius: size(100);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                float: left;
+                                margin-right: size(37);
+                                margin-top: size(59);
+                                .store_inside, .store_inside2{
+                                   
+                                    width: size(10);
+                                 height: size(10);
+                                    border-radius: size(100);
+                                    background-color: #12b7f5;
+                                }
+                                .store_inside2{
+                                    background-color: #b8b8b8;
+                                }
+                               }
+                               .constrol_imgdiv{
+                                   float: left;
+                                   position: relative;
+                                   overflow: hidden;
+                                .constrol_img{
+                                    float: left;
+                                    width: size(130);
+                                    height: size(130);
+                                    margin-right: size(36);
+                                    border-radius: size(10);
+                                }
+                                .ischiose{
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    width: size(130);
+                                    height: size(30);
+                                    background-color: rgba(0,0,0,0.5);
+                                    border-radius: 0 0 size(10) size(10);
+                                    overflow: hidden;
+                                    .dot,.dot2{
+                                        float: left;
+                                        width: size(14);
+                                        height: size(14);
+                                        background-color: #63d3bd;
+                                        border-radius: size(100);
+                                        margin: size(8) size(10) size(8) size(30);
+                                    }
+                                    .dot2{
+                                        background-color: #ff5252;
+                                    }
+                                    .ischiose_p{
+                                        float: left;
+                                        color: #ffffff;
+                                        font-size: size(16);
+                                        line-height: size(30);
+                                    }
+                                }
+                               }
+                               .constrol_zw{
+                                   float: left;
+                       
+                                   .store_title{
+                                    color: #021218;
+                                    font-size: size(18);
+                                    margin-bottom: size(25);
+                                    font-family: "MicrosoftYaHei-Bold";
+                                   }
+                                   .store_outstate{
+                                       overflow: hidden;
+                                       margin-bottom: size(30);
+                                       .outstate_text{
+                                           float: left;
+                                           color: #717171;
+                                           font-size: size(16);
+                                           margin-right: size(87);
+                                       }
+                                   }
+                                   .store_price{
+                                    color: #ff5252;
+                                    font-size: size(22);
+                                    margin-bottom: size(29)
+                                   }
+                                   .store_edit{
+                                       overflow: hidden;
+                                    
+                                       .store_editbox{
+                                           overflow: hidden;
+                                           float: left;
+                                           margin-right: size(95);
+                                        .edit_icon{
+                                            float: left;
+                                            width: size(16);
+                                            height: size(16);
+                                            margin-right: size(6);
+                                            margin-top: size(3);
+                                        }
+                                        .edit_text,.edit_text2{
+                                            float: left;
+                                            color: #707070;
+                                            font-size: size(16);
+                                        }
+                                        .edit_text2{
+                                            color: #717171;
+                                        }
+                                       }
+                                   }
+
+                               }
+                           
+                                
+                            }
+                        }
+                        .constrol_nr2{
+                            padding-top: 0;
+                        }
+                        .basic{
+                            margin: size(32) size(50) size(30) size(50);
+                            background-color: #ffffff;
+                            padding-bottom: size(86);
+                            margin-bottom: size(200);
+                            .basic_info{
+                                .basic_top{
+                                    padding-left: size(27);
+                                    overflow: hidden;
+                                    padding-bottom: size(35);
+                                    .basic_square{
+                                        float: left;
+                                        background-color: #407ac1;
+                                        width: size(4);
+                                        height: size(20);
+                                        margin-right: size(17);
+                                        margin-top: size(14);
+                                    }
+                                    .basic_top_bt{
+                                        float: left;
+                                        color: #333333;
+                                        font-size: size(18);
+                                        line-height: size(48);
+                                    }
+                                }
+                                .basic_nr{
+                                    padding: 0 size(43);
+                                    overflow: hidden;
+                                    .basic_shopimg{
+                                        overflow: hidden;
+                                        padding-bottom: size(31);
+                                        .basic_shop_p{
+                                            float: left;
+                                            color: #333333;
+                                            font-size: size(16);
+                                            margin-top: size(48);
+                                            margin-right: size(25);
+                                        }
+                                        .basic_imgdivs{
+                                            position: relative;
+                                            float: left;
+                                            overflow: hidden;
+                                            margin-right: size(30);
+                                            .basic_img{
+                                                 float: left;
+                                                width: size(130);
+                                                height: size(130);
+                                                
+                                            }
+                                            .basic_ischoice{
+                                                position: absolute;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: size(0);
+                                                width: size(130);
+                                                height: size(40);
+                                                background-color: rgba(0,0,0,0.5);
+                                                .basic_ischoice_p{
+                                                    text-align: center;
+                                                    color: #ffffff;
+                                                    font-size: size(16);
+                                                    line-height: size(40);
+                                                }
+                                            }
+                                            .basic_false{
+                                                position: absolute;
+                                                right: 0;
+                                                top: 0;
+                                                width: size(16);
+                                                height: size(16);
+                                            }
+                                        }
+                                        .basic_imgtext{
+                                            clear: both;
+                                            color: #dddddd;
+                                            font-size: size(14);
+                                            padding-left: size(100);
+                                            padding-top: size(22);
+                                        }
+                                       
+                                    }
+                                    .basic_shopbt{
+                                        padding-bottom: size(30);
+                                        overflow: hidden;
+                                        clear: both;
+                                        .shop_title{
+                                            float: left;
+                                            line-height: size(40);
+                                            color: #333333;
+                                            font-size: size(16);
+                                            margin-right: size(11);
+                                        }
+                                        .fenlei{
+                                            float: left;
+                                            overflow: hidden;
+
+
+                                            .fenleibox{
+                                                float: left;
+                                                margin-right: size(36);
+                                                .fenlei_outer{
+                                                    float: left;
+                                                    border:size(2) solid #b4b4b4;
+                                                    width: size(16);
+                                                    height: size(16);
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    border-radius: size(100);
+                                                    margin-right: size(8);
+                                                    margin-top: size(10);
+                                                    .fenlei_inside,.fenlei_inside2{
+                                                        width: size(10);
+                                                        height: size(10);
+                                                        background-color: #1cbcff;
+                                                        border-radius: size(100);
+                                                    }
+                                                    .fenlei_inside2{
+                                                        background-color: #bcbdbe;
+                                                    }
+                                                }
+                                                .fenlei_p{
+                                                    color: #333333;
+                                                    font-size: size(16);
+                                                    float: left;
+                                                    line-height: size(40);
+                                                }
+
+                                            }
+                                        }
+                                        .shopsize{
+                                            float: left;
+                                            overflow: hidden;
+                                            .chang,.chang2{
+                                                float: left;
+                                                color: #dddddd;
+                                                font-size: size(16);
+                                                padding: 0 size(7);
+                                                line-height: size(30);
+                                                margin-right: size(9);
+                                                border-bottom: size(1) solid #1cbcff;
+                                            }
+                                            .chang2{
+                                                color: #333333;
+                                                border-bottom: size(1) solid #bfbfbf;
+                                                
+                                            }
+                                            .x{
+                                                float: left;
+                                                color: #dddddd;
+                                                font-size: size(20);
+                                                line-height: size(30);
+                                                margin-right: size(9);
+                                            }
+                                        }
+                                        .shop_danwei{
+                                            color: #333333;
+                                            font-size: size(16);
+                                            line-height: size(30);
+                                            margin-left: size(9);
+                                        }
+                                        .shop_titlediv{
+                                            position: relative;
+                                            overflow: hidden;
+                                            float: left;
+                                            .shop_title_edit,.shop_title_edit2,.shop_title_edit3{
+                                                border:solid size(1) #bfbfbf;
+                                                border-radius: size(4);
+                                                padding-left: size(30);
+                                                padding-right: size(60);
+                                                line-height: size(40);
+                                                color: #333333;
+                                                font-size: size(16);
+                                                float: left;
+                                                min-width: size(386);
+                                            }
+                                            .shop_title_edit2{
+                                                text-align: center;
+                                                color: #151515;
+                                                font-size: size(20);
+                                            }
+                                            .shop_title_edit3{
+                                                min-width: size(202);
+                                            }
+                                            ::-webkit-input-placeholder{
+                                                color: #333333;
+                                            }
+                                            .shop_edit_hint{
+                                                position: absolute;
+                                                right: size(12);
+                                                top: size(0);
+                                                bottom: 0;
+                                                line-height: size(40);
+                                                color: #828285;
+                                                font-size: size(14);
+                                            }
+                                        }
+                                      
+                                        .basic_selects{
+                                            float: left;
+                                            border: solid size(1) #bfbfbf;
+                                            margin-right: size(10);
+                                            border-radius: size(4);
+                                          
+                                           .basic_options,.basic_options2{
+                                            overflow: hidden;
+                                            height: size(40);
+                                            padding: 0 size(13);
+                                         
+                                            .basic_selects_p{
+                                                text-align: center;
+                                                float: left;
+                                                color: #333333;
+                                                font-size: size(16);
+                                                line-height: size(40);
+                                               
+                                            }
+                                            .basic_sjxs{
+                                                float: left;
+                                                margin-left: size(5);
+                                                width: size(15);
+                                                height: size(11);
+                                                margin-top: size(14);
+                                            }
+                                           }
+                                           .basic_options2{
+                                            background-color: #1cbcff;
+                                            .basic_selects_p{
+                                                color: #ffffff;
+                                            }
+                                           }
+                                        }
+                                   
+                                      
+                                        .shop_editstate{
+                                            float: left;
+                                            color: #ac1d2f;
+                                            font-size: size(14);
+                                            line-height: size(40);
+                                            margin-left: size(9);
+                                        }
+                                        
+                                    }
+                                    .basic_dotdiv{
+                                        overflow: hidden;
+                                        padding-top: size(19);
+                                        padding-bottom: size(36);
+                                        padding-left: size(102);
+                                    
+                                        .basic_dots{
+                                          
+                                            overflow: hidden;
+                                            float: left;
+                                            margin-right: size(33);
+                                            .basic_outer{
+                                                float: left;
+                                                border:size(2) solid #b4b4b4;
+                                                width: size(16);
+                                                height: size(16);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: size(100);
+                                                margin-right: size(8);
+                                                .basic_inside,.basic_inside2{
+                                                    width: size(10);
+                                                    height: size(10);
+                                                    background-color: #1cbcff;
+                                                    border-radius: size(100);
+                                                }
+                                                .basic_inside2{
+                                                    background-color: #bcbdbe;
+                                                }
+                                            }
+                                            .basic_dottext{
+                                                float: left;
+                                                color: #333333;
+                                                font-size: size(16);
+                                            }
+                                        }
+                                      
+                                    }
+                                  
+                                    .basic_shopaddbtn{
+                                        padding: 0 size(37);
+                                        line-height: size(50);
+                                        color: #ffffff;
+                                        font-size: size(16);
+                                        text-align: center;
+                                        border-radius: size(4);
+                                        background-color: #1cbcff;
+                                        float: left;
+                                        margin-bottom: size(51);
+                                        margin-left: size(88);
+                                    }
+                                    .editor{
+                                        width: size(1120);
+                                        height: size(290);
+                                        background-color: #ffffff;
+                                        border: solid size(3) #bfbfbf;
+                                        margin-left: size(76);
+                                        margin-bottom: size(48);
+                                    }
+                                    .editor_btns{
+                                        margin-left: size(76);
+                                        overflow: hidden;
+                                        .editor_btn,.editor_btn2{
+                                            color: #ffffff;
+                                            font-size: size(30);
+                                            text-align: center;
+                                            line-height: size(55);
+                                            padding: 0 size(130);
+                                            border-radius: size(4);
+                                            background-color: #8dddff;
+                                            float: left;
+                                            margin-right: size(77);
+                                        }
+                                        .editor_btn2{
+                                            background-color: #1cbcff;
+                                        }
+                                    }
+                                  
+                                }
+                         
+                            }
+                         
+                        }
+                    
+
+                    }
+
+
+                }
+               
+            }
+        }
+
+        .erweima_img {
+            position: absolute;
+            bottom: size(110);
+            left: size(28);
+            width: size(130);
+            height: size(170);
+            display: block;
+            z-index: 1;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.About {
+    height: 900px;
+    background-color: #ffffff;
+}
+
+.Aboutujian {
+    width: 12.5rem;
+    height: 3rem;
+    margin: 100px auto;
+}
+.tabCont {
+	display: none;
+    /* width: 100%; */
+    margin-top: 25px;
+}
+.ip_l {
+	/* width: 960px; */
+    padding: 0 40px;
+    margin-left: 150px;
+}
+.ip_l li {
+	width: 340px;
+	height: 290px;
+	float: left;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.ip_l li .tu {
+	width: 340px;
+	height: 290px;
+	text-align: center;
+}
+.ip_l li .tu img {
+	width: 300px;
+    height: 225px;
+    margin: auto auto;
+	vertical-align: top;
+    margin-top: 10px;
+}
+.ip_l li .tu .title {
+	width: 260px;
+	height: 35px;
+	line-height: 35px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	color: #00547d;
+	margin: 0px auto;
+	margin-top: 10px;
+	border-top: 1px solid #00547d;
+}
+.ip_l li .des {
+	width: 340px;
+	height: 290px;
+	background: url(../img/bg_a.png) repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.7s;
+	-moz-transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+}
+.ip_l li:hover .des {
+	opacity: 1;
+}
+.ip_l li .des h6 {
+	width: 90%;
+	margin: 0px auto;
+	height: 65px;
+	line-height: 85px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+}
+.ip_l li .des h6 a {
+	font-size: 18px;
+	color: #ffff00;
+}
+.ip_l li .des p {
+	width: 90%;
+	margin: 0px auto;
+	height: 120px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #fff;
+	line-height: 215%;
+}
+.ip_l li .des .more {
+	display: block;
+	width: 98px;
+	height: 29px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 29px;
+	color: #ffff00;
+	font-size: 14px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+
+.indexcontent {
+    background-color: #ffffff;
+}
+.videoo video {
+    clear: both;
+    display: block;
+    margin: 50px auto 40px auto;
+    object-fit: none;
+}
+/* 轮播图的样式 */
+.container {
+    /* container采用相对定位relative，便于子容器进行绝对定位absolute */
+    position: relative;
+    width: 11.02rem;
+    height: 7rem;
+    margin: 0px auto 0px auto;
+    /* 给元素块添加周边阴影效果 */
+    /* box-shadow: 0 0 5px green; */
+    /*防止溢出*/
+    overflow: hidden;
+}
+/* 图片的div */
+.wrap {
+    position: absolute;
+    width: 58.6rem;
+    height: 7rem;
+    z-index: 1;
+    padding: 0;
+}
+/* 设置整体图片的大小 */
+.container .wrap li {
+    width: 11.72rem;
+    height: 7rem;
+    float: left;
+    /* 设置左浮动，所有的图片排成一排 */
+    list-style: none;
+}
+
+/* 设置局部图片的大小 */
+.container img {
+    width: 2.44rem;
+    height: 2.92rem;
+    margin-right: 0.49rem;
+    margin-bottom: 0.61rem;
+    display: block;
+    float: left;
+}
+/* 去除下划线 */
+a {
+    text-decoration: none;
+}
+
+.Mallstores {
+    clear: both;
+    position: relative;
+    text-align: center;
+}
+/* 对左右图片切换按钮进行修饰 */
+.Mallstores .arrow img {
+    width: 0.15rem;
+    height: 0.29rem;
+}
+
+.Mallstores .arrow {
+    position: absolute;
+    top: 50%;
+    color: #cdcdcd;
+    padding: 0px 14px;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 2;
+}
+
+.Mallstores .arrow_left {
+    left: 1.52rem;
+}
+
+.Mallstores .arrow_right {
+    right: 1.42rem;
+}
+
+.Mallstores:hover .arrow {
+    display: block;
+}
+/* 对小圆点进行修饰 */
+.Mallstores .buttons {
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.Mallstores .buttons span {
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 30px;
+    /* font-size: 0;    */
+}
+
+.Mallstores .buttons span.on {
+    background-color: #6d6d6d;
+}
+
+/* 关于梧州 */
+.quick {
+    background-color: #ffffff;
+    /* height: 7.01rem; */
+}
+
+.quick .fastzombie {
+    padding-left: 1.63rem;
+    float: left;
+}
+
+.quick img {
+    width: 5.42rem;
+    height: 4.29rem;
+    padding-top: 0.9rem;
+    padding-left: 0.57rem;
+}
+.experience {
+    height: 6.85rem;
+    background-color: #ffffff;
+}
+
+.experience img {
+    width: 6.08rem;
+    height: 4.59rem;
+    padding-top: 1.85rem;
+    padding-left: 1.68rem;
+    float: left;
+    overflow: hidden;
+    padding-right: 0.5rem;
+}
+.ujstore {
+    height: 3.12rem;
+    background-color: #f6f9ff;
+    text-align: center;
+}
+
+
+
+/* 底部 */
+.base {
+    height: 2.93rem;
+    background-color: #ffffff;
+}
+
+.baseleft img {
+    width: 1.02rem;
+    height: 1.04rem;
+}
+
+.baseleft {
+    padding-top: 0.55rem;
+    padding-left: 4.84rem;
+}
+
+.address {
+    color: #000000;
+    font-size: 0.14rem;
+    padding-left: 11.76rem;
+    padding-top: 1rem;
+}
+
+.basetop {
+    height: 2.4rem;
+    border-bottom: #121215 0.03rem solid;
+}

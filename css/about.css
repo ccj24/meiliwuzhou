@@ -1,0 +1,197 @@
+
+   .welcome-grid:hover div.welcome-text {
+    border: 2px solid #313131;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.welcome-grid:hover div.welcome-icon {
+    background:#313131;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.welcome-text h4 {
+    font-size: 1.6em;
+     color: #313131;
+     font-weight: 600;
+}
+.welcome-text p {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #555;
+    line-height: 2em;
+}
+.welcome-grid:hover {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+.product-section {
+    padding: 5em 0;
+}
+.product-section h3,.news-section h3,.testimonials-section h3,.history-section h3,.team h3,.overview h3,.main-services h3{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #17c2a4;
+    text-transform: capitalize;
+}
+.product-left {
+    float: left;
+    width: 50%;
+    overflow:hidden;
+}
+.product-right {
+    float: right;
+    width: 50%;
+    background: #17c2a4;
+    padding: 3em 2em 2.4em;
+    transition:0.5s all;
+ -webkit-transition:0.5s all;
+ -moz-transition:0.5s all;
+ -o-transition:0.5s all;
+ -ms-transition:0.5s all;
+}
+
+
+@-webkit-keyframes capcirclein {
+    from { background-position: 0 0; }
+    to { background-position: -5000px 0; }
+}
+@-o-keyframes capcirclein {
+    from { background-position: 0 0; }
+    to { background-position: -5000px 0; }
+}
+@-moz-keyframes capcirclein {
+    from { background-position: 0 0; }
+    to { background-position: -5000px 0; }
+}
+@keyframes capcirclein {
+    from { background-position: 0 0; }
+    to { background-position: -5000px 0; }
+}
+@-webkit-keyframes capcircleout {
+    from { background-position: -5000px 0; }
+    to { background-position: 0px 0; }
+}
+@-o-keyframes capcircleout {
+    from { background-position: -5000px 0; }
+    to { background-position: 0px 0; }
+}
+@-moz-keyframes capcircleout {
+    from { background-position: -5000px 0; }
+    to { background-position: 0px 0; }
+}
+@keyframes capcircleout {
+    from { background-position: -5000px 0; }
+    to { background-position: 0px 0; }
+}
+
+.burst-circle img{
+    position: relative;
+    left: 50%;
+    min-width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.burst-circle:hover img{
+    -webkit-transform: scale(2,2) translateX(-50%) rotate(10deg);
+    -ms-transform: scale(2,2) translateX(-50%) rotate(10deg);
+    -o-transform: scale(2,2) translateX(-50%) rotate(10deg);
+    transform: scale(2,2) translateX(-50%) rotate(10deg);
+}
+
+.burst-circle h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.8em;
+    z-index: 3;
+    width: 75%;
+    color: rgba(242, 242, 242, 0);
+    text-align: center;
+    font-weight: 300;
+    -webkit-transform: translate(-50%,100%);
+    -ms-transform: translate(-50%,100%);
+    -o-transform: translate(-50%,100%);
+    transform: translate(-50%,100%);
+    -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
+    -o-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
+    line-height: 1.5em;
+        font-weight: 600;
+}
+
+.burst-circle:hover h4{
+    color: #f2f2f2;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+/*-- //image-hover-effect --*/
+.testimonials-section {
+    /* padding: 5em 0; */
+}
+.testimonials-section p {
+    font-size: 1em;
+    line-height: 2em;
+    color: #555;
+    background: url(../img/quote.png) no-repeat 0px 0px;
+    padding-left: 3em;
+}
+.testimonials-section h5{
+    font-size: 1.5em;
+    color: #313131;
+    text-transform: capitalize;
+    margin: .5em 0 0 2em;
+    font-weight: 600;
+}
+.testimonials-grids {
+    margin-top: 3em;
+    background: #eee;
+    padding: 2em;
+}
+.testimonials-grid {
+    margin-top: 1.5em;
+}
+.footer-section {
+    background: #17c2a4;
+    padding: 5em 0;
+}
+.footer-grid ul li :hover {
+    color: #313131;
+}
+
+
+
+
+
+
+
+
+

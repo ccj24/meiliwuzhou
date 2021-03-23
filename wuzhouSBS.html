@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>梧州石表山</title>
+		<style>
+			/* 轮播图的样式 */
+			.container {
+				/* container采用相对定位relative，便于子容器进行绝对定位absolute */
+				position: relative;
+				width: 11.02rem;
+				height: 5rem;
+				margin: 0px auto 0px auto;
+				/* 给元素块添加周边阴影效果 */
+				/* box-shadow: 0 0 5px green; */
+				/*防止溢出*/
+				overflow: hidden;
+			}
+			/* 图片的div */
+			.wrap {
+				position: absolute;
+				width: 58.6rem;
+				height: 5rem;
+				z-index: 1;
+				padding: 0;
+			}
+			/* 设置整体图片的大小 */
+			.container .wrap li {
+				width: 11.72rem;
+				height: 5rem;
+				float: left;
+				/* 设置左浮动，所有的图片排成一排 */
+				list-style: none;
+			}
+
+			/* 设置局部图片的大小 */
+			.container img {
+				width: 2.44rem;
+				height: 2rem;
+				margin-right: 0.49rem;
+				margin-bottom: 0.61rem;
+				display: block;
+				float: left;
+			}
+			/* 去除下划线 */
+			a {
+				text-decoration: none;
+			}
+
+			.Mallstores {
+				position: relative;
+				text-align: center;
+			}
+			/* 对左右图片切换按钮进行修饰 */
+			.Mallstores .arrow img {
+				width: 0.15rem;
+				height: 0.29rem;
+			}
+
+			.Mallstores .arrow {
+				position: absolute;
+				top: 50%;
+				color: #cdcdcd;
+				padding: 0px 14px;
+				border-radius: 50%;
+				font-size: 50px;
+				z-index: 2;
+			}
+
+			.Mallstores .arrow_left {
+				left: 0.52rem;
+			}
+
+			.Mallstores .arrow_right {
+				right: 0.42rem;
+			}
+
+			.Mallstores:hover .arrow {
+				display: block;
+			}
+			/* 对小圆点进行修饰 */
+			.Mallstores .buttons {
+				font-size: 0;
+				margin-bottom: 30px;
+			}
+
+			.Mallstores .buttons span {
+				display: inline-block;
+				width: 0.1rem;
+				height: 0.1rem;
+				border-radius: 50%;
+				background-color: #cdcdcd;
+				text-align: center;
+				cursor: pointer;
+				margin-right: 30px;
+				/* font-size: 0;    */
+			}
+
+			.Mallstores .buttons span.on {
+				background-color: #6d6d6d;
+			}
+			/* volg */
+			.videoo video {
+				clear: both;
+				display: block;
+				margin: 50px auto 40px auto;
+				object-fit: none;
+				padding-bottom: 0.5rem;
+			}
+			#Animate {
+				width: 400px;
+				height: 400px;
+				margin-top: 100px;
+				margin-left: 100px;
+				float: left;
+			}
+			.cartoon1 img {
+				transition-property: all;
+				transition-duration: 4s;
+				transition-delay: 0s, 1s, 0s;
+				border: solid 2px #000000;
+				border-radius: 10px;
+				width: 400px;
+				height: 400px;
+			}
+			.cartoon1 > img:hover {
+				border-radius: 90px;
+				box-shadow: 5px 3px 5px #03040a;
+			}
+			.cartoon2 {
+				overflow: hidden;
+				border-radius: 10px;
+				border: solid 2px #000000;
+			}
+			.cartoon2 img {
+				transition-property: all;
+				transition-duration: 4s;
+				transition-delay: 0s, 1s, 0s;
+				width: 400px;
+				height: 400px;
+			}
+			.cartoon2 > img:hover {
+				width: 200px;
+				height: 200px;
+				box-shadow: 5px 3px 5px #03040a;
+			}
+			.cartoon3 img {
+				transition-property: all;
+				transition-duration: 4s;
+				transition-delay: 0s, 1s, 0s;
+				border: solid 2px #000000;
+				border-radius: 10px;
+				width: 400px;
+				height: 400px;
+			}
+			.cartoon3 > img:hover {
+				transform: rotate(360deg);
+				border-radius: 90px;
+				box-shadow: 5px 3px 5px #03040a;
+			}
+			
+		</style>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/autorem.js"></script>
+	</head>
+
+	<body>
+		<div class="index">
+			<div class="console">
+				<div class="console_top">
+					<div class="shop_div">
+						<img class="shop_logo" src="img/logo.jpg" alt="" />
+						<p class="shop_name">百年商埠·魅力梧州</p>
+					</div>
+					<div class="userinfo">
+						<img class="userimg" src="img/user.jpeg" alt="" />
+						<p class="user_name">欢迎来到梧州</p>
+						<!-- <img class="sjx_icon" src="img/sjx.png" alt="" />
+						<img class="power" src="img/power.png" alt="" /> -->
+					</div>
+				</div>
+				<div class="content">
+					<div class="menu">
+						<!-- 如果滚动条经过就用menu_titlediv2样式，正常就要menu_titlediv样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+						<a href="index.html">
+							<div class="menu_titlediv">
+								<img
+									class="menu_icon1"
+									src="img/menu_icon1.png"
+									alt=""
+								/>
+								<p class="menu_title">主页</p>
+							</div>
+						</a>
+
+						<div class="menu_main">
+							<a href="wuzhouBYS.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon2.png"
+										alt=""
+									/>
+									<p class="list_p">白云山景区</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhoulm.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州龙母庙</p>
+								</div>
+							</a>
+
+							<a href="wuzhouQL.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon4.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州骑楼城</p>
+								</div>
+							</a>
+
+							<a href="wuzhouSBS.html">
+								<div class="mainlist_nr2">
+									<img
+										class="menu_icons"
+										src="img/menu_icon5.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州风景</p>
+									<img
+										class="progress_bar"
+										src="img/menu_auto.png"
+										alt=""
+									/>
+								</div>
+							</a>
+
+							<a href="wuzhouCH.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州苍海湖</p>
+								</div>
+							</a>
+
+							<a href="wuzhouLiuputea.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon7.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">梧州六堡茶</p>
+								</div>
+							</a>
+						</div>
+						<div class="menu_main">
+							<!-- 如果滚动条经过就用mainlist2样式，正常就要mainlist样式，滚动条图片为<img class="progress_bar" src="img/menu_auto.png" alt="" />-->
+							<a href="wuzhouglg.html">
+								<div class="mainlist">
+									<img
+										class="menu_icon2"
+										src="img/menu_icon8.png"
+										alt=""
+									/>
+									<p class="list_p">老字号特色小吃</p>
+									<img
+										class="show"
+										src="img/menu_close.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="wuzhouLJS.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon9.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">李济深故居</p>
+								</div>
+							</a>
+
+							<a href="wuzhouWcity.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon10.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">永安王城</p>
+								</div>
+                            </a>
+                            <a href="future/ljgd.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon3.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">未来可期</p>
+								</div>
+                            </a>
+                            <a href="about.html">
+								<div class="mainlist_nr">
+									<img
+										class="menu_icons"
+										src="img/menu_icon6.png"
+										alt=""
+									/>
+									<p class="mainlist_nrp">关于我</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="manage">
+						<div class="manage_nav_nr">
+							<img
+								class="nav_icon"
+								src="img/nav_icon.png"
+								alt=""
+							/>
+							<img class="nav_sjx" src="img/nav_sjx.png" alt="" />
+							<p class="nav_p">梧州风景</p>
+						</div>
+						<div class="manage_content">
+							<div class="manage_divs">
+								<div class="control_fixed">
+									<div class="control_top">
+										<div class="search_div">
+											<input class="search" type="text" />
+											<div class="search_btn">搜索</div>
+                                        </div>
+                                        <a href="http://www.bytravel.cn/view/top10/index456.html">
+                                        <div class="sendbtn">梧州十大旅游风景</div>
+                                    </a>
+									</div>
+									<div class="constrol_nav">
+										<div
+											id="clane1"
+											class="navtitle2"
+											onclick="showdiv()"
+										>
+											日出日落
+										</div>
+										<div
+											id="clane2"
+											class="navtitle"
+											onclick="showdiv1()"
+										>
+											我的记录
+										</div>
+										<div
+											id="clane3"
+											class="navtitle"
+											onclick="showdiv2()"
+										>
+											动画展览
+										</div>
+									</div>
+								</div>
+								<div class="constrol_nr">
+									<div class="constrol_chiose">
+										<div class="allchiose">
+											<div class="outer_ring">
+												<div class="inside_ring"></div>
+											</div>
+											<p class="allchiose_p">重点推荐</p>
+										</div>
+									</div>
+									<!-- 列表1 -->
+									<div id="show1" style="display: block;">
+										<!-- 视频 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												黄昏再美终将被黑暗笼罩，黑夜再长终将被黎明照亮
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise1.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise1.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 2 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												五点的朝阳爱而不得，六点的夕阳人潮拥挤
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise3.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise3.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 3 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												爱在黄昏日落时，自由自在的欣赏这片晚霞
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise2.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise2.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 4 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												百年商埠，三江总汇，广西的东大门，有着一定的地理优势，曾经的小香港
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise4.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise4.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 5 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												应是天仙狂醉，乱把白云揉碎
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise5.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise5.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 6 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												清晨大雾|每个早起的人应该都在为自己想要的在努力，你有多久没早起了
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise6.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise6.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 7 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												我打算在人间贩卖黄昏，我一个人忙不过来
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise7.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise7.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 8 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												中国优秀旅游城市。总有一天一定要梧州来梧州看看
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise8.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise8.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+										<!-- 9 -->
+										<div
+											class="videoo"
+											style="
+												background-color: #ffffff;
+												text-align: center;
+												margin-bottom: 0.5rem;
+											"
+										>
+											<p
+												style="
+													font-size: 0.3rem;
+													padding-top: 0.3rem;
+												"
+											>
+												我已经习惯每个傍晚去想它----梧州
+											</p>
+											<video
+												muted
+												controls
+												autoplay
+												autoplay="autoplay"
+												width="1100"
+												height="600"
+											>
+												<source
+													src="./video/sunrise9.mp4"
+													type="video/mp4"
+												/>
+												<source
+													src="./video/sunrise9.mp4"
+													type="video/ogg"
+												/>
+											</video>
+										</div>
+									</div>
+
+									<!-- 列表2 -->
+									<div id="show2" style="display: none;">
+										<div class="herbaljelly">
+											<div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+													></div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img
+														style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/wanxia/sun1.jpg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															红霞美如画
+														</p>
+													</div>
+												</div>
+												<div
+													class="constrol_zw"
+													style="
+														width: 6.5rem;
+														float: left;
+													"
+												>
+													<div
+														class="store_title"
+														style="
+															font-weight: 800;
+														"
+													>
+														<a
+															href="http://gx.people.com.cn/n2/2020/0512/c390645-34012801-3.html"
+															>2019.6.19---梧州风雨过后红霞美如画晚霞美呆了</a
+														>
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p
+															style="
+																margin-right: 0.2rem;
+															"
+														>
+															法国著名雕塑家罗丹曾说：世界上并不缺少美，而是缺少发现美的眼睛。随着现在人们生活水平的提高，出门旅游成了一件司空见惯的事情，
+															但是生活中其实有很多的美景，是不需要刻意追寻的，只需要我们去发掘，比如：夕阳美如画，清风醉晚霞，温婉拥雅韵，墨色度芳华。海天一色间，暮色浴群山，苍茫雾轻拂，碧蓝接天映。
+															疏林斜晖，残照当楼，如血的残阳伴随着古人们走过了数千年，也在他们的诗词中流传了数千年。
+														</p>
+													</div>
+												</div>
+												<marquee
+													behavior="scroll"
+													onmouseover="this.stop()"
+													onmouseout="this.start()"
+													width="270"
+													height="240"
+													direction="up"
+												>
+													<img
+														style="width: 3.5rem;"
+														src="./img/wanxia/sun2.jpg"
+														alt=""
+													/>
+												</marquee>
+											</div>
+											<div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+													></div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img
+														style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/wanxia/sun3.jpg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															不饮冰泉羹，枉行
+														</p>
+													</div>
+												</div>
+												<div
+													class="constrol_zw"
+													style="
+														width: 6.5rem;
+														float: left;
+													"
+												>
+													<div
+														class="store_title"
+														style="
+															font-weight: 800;
+														"
+													>
+														<a
+															href="http://blog.sina.com.cn/s/blog_151e15c0c0102wu1b.html"
+															>2019.8.19---梧州雨后晚霞映江红晚霞美呆了</a
+														>
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p
+															style="
+																margin-right: 0.2rem;
+															"
+														>
+															晚霞和夕阳是极其壮美的，所以以前还有一首歌“最美不过夕阳红”，夕阳也是古诗词中最为常见的一个意象，比如大家最熟悉的可能就是李商隐的那首诗《乐游原》：
+															向晚意不适，驱车登古原。夕阳无限好，只是近黄昏。夕阳美如画，清风醉晚霞，温婉拥雅韵，墨色度芳华。海天一色间，暮色浴群山，苍茫雾轻拂，碧蓝接天
+															映。疏林斜晖，残照当楼，如血的残阳伴随着古人们走过了数千年，也在他们的诗词中流传了数千年。
+														</p>
+													</div>
+												</div>
+												<marquee
+													behavior="scroll"
+													onmouseover="this.stop()"
+													onmouseout="this.start()"
+													width="270"
+													height="240"
+													direction="up"
+												>
+													<img
+														style="width: 3.5rem;"
+														src="./img/wanxia/sun4.jpg"
+														alt=""
+													/>
+												</marquee>
+											</div>
+											<div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+													></div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img
+														style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/wanxia/sun5.jpeg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															春风十里鸳鸯江
+														</p>
+													</div>
+												</div>
+												<div
+													class="constrol_zw"
+													style="
+														width: 6.5rem;
+														float: left;
+													"
+												>
+													<div
+														class="store_title"
+														style="
+															font-weight: 800;
+														"
+													>
+														<a
+															href="https://www.meipian.cn/2pw1vvu2"
+															>2020.4.10---梧州鸳鸯江夕阳无限好</a
+														>
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p
+															style="
+																margin-right: 0.2rem;
+															"
+														>
+															落日留下长长的影子，一片血红。天色很快就暗下来了，葡萄色的黄昏，紫色的黄昏。笼罩在柑橘林和狭长的瓜田上;太阳是榨过汁的葡萄紫，夹杂着勃艮第红。
+															夕阳旁边的云霞色彩变化极多。一会儿白合色，一会儿金黄色，一会儿半紫半黄，一会儿半灰半红，真是色彩缤纷，变幻无穷。
+															一抹殷红色的夕阳照在西山上，湛蓝湛蓝的天空浮动着大块大块的白色云朵，它们在夕阳的辉映下呈现出火焰一般的嫣红，倘若你仔细地看，
+															你会看见那云絮在空中飘动，就像置身于轻纱般的美梦似的，会使你远离烦恼的困扰。
+														</p>
+													</div>
+												</div>
+												<marquee
+													behavior="scroll"
+													onmouseover="this.stop()"
+													onmouseout="this.start()"
+													width="270"
+													height="240"
+													direction="up"
+												>
+													<img
+														style="width: 3.5rem;"
+														src="./img/wanxia/sun6.jpg"
+														alt=""
+													/>
+												</marquee>
+											</div>
+											<div class="constrol_store">
+												<div class="store_outer">
+													<div
+														class="store_inside"
+													></div>
+												</div>
+												<div class="constrol_imgdiv">
+													<img
+														style="height: 2.3rem;"
+														class="constrol_img"
+														src="./img/wanxia/sun7.jpg"
+														alt=""
+													/>
+													<div class="ischiose">
+														<div class="dot"></div>
+														<p class="ischiose_p">
+															风情泗洲岛
+														</p>
+													</div>
+												</div>
+												<div
+													class="constrol_zw"
+													style="
+														width: 6.5rem;
+														float: left;
+													"
+												>
+													<div
+														class="store_title"
+														style="
+															font-weight: 800;
+														"
+													>
+														<a
+															href="http://www.weather.com.cn/guangxi/tqxw/2748063.shtml"
+															>2020.4.22---梧州雨后晚霞映江红晚霞美呆了</a
+														>
+													</div>
+													<div
+														style="
+															font-size: 0.2rem;
+														"
+													>
+														<p
+															style="
+																margin-right: 0.2rem;
+															"
+														>
+															中国天气网广西站讯
+															受副热带高压控制，近期梧州天气晴热。然而天气虽晴热，但泗洲岛夕阳美景迷人，给岛上游客送上一丝惬意。
+															22日，梧州气象台便发布高温黄色预警信号，23日，市区最高温度攀升至36.1℃。尽管热浪逼人，但高温天气丝毫不影响游人到泗洲岛上欣赏夕阳美景的热情。
+															泗洲岛上，赏波光粼粼映照余晖灿灿，听鸟语阵阵伴奏水声潺潺，宁静休闲的氛围使人暂时忘却了热浪，心头泛起一丝清凉。游人在河畔纷纷摆出各种造型，忍不住“调戏”一番夕阳美景。。
+														</p>
+													</div>
+												</div>
+												<marquee
+													behavior="scroll"
+													onmouseover="this.stop()"
+													onmouseout="this.start()"
+													width="270"
+													height="240"
+													direction="up"
+												>
+													<img
+														style="width: 3.5rem;"
+														src="./img/wanxia/sun8.jpeg"
+														alt=""
+													/>
+												</marquee>
+											</div>
+										</div>
+									</div>
+									<!-- 列表3 -->
+									<div
+										id="show3"
+										style="
+											display: none;
+											background-color: #ffffff;
+										"
+									>
+										<!-- 动画 -->
+										<div style="background-color: #ffffff;font-size: 0.3rem;text-align: center;height: 13rem;">
+											<div id="Animate" class="cartoon1">
+												<!--圆角-->
+												<img
+													src="./img/wanxia/sun3.jpg"
+                                                />
+                                               
+                                            </div>
+                                            
+											<!-- 缩小 -->
+											<div id="Animate" class="cartoon2">
+												<img
+													src="./img/wanxia/sun1.jpg"
+                                                />
+                                              
+                                            </div>
+                                           
+											<!--旋转+圆角 -->
+											<div id="Animate" class="cartoon3">
+												<img
+													src="./img/wanxia/sun2.jpg"
+                                                />
+                                                
+                                            </div>
+                                           
+                                            <div id="Animate" class="cartoon1">
+												<!--圆角-->
+												<img
+													src="./img/wanxia/sun3.jpg"
+                                                />
+                                              
+                                            </div>
+                                           
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img class="erweima_img" src="./img/qrcode.png" alt="" />
+			</div>
+		</div>
+		<script>
+			// 按键1
+			function showdiv() {
+				if (
+					(showdiv_display =
+						document.getElementById('show1').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show1').style.display = 'block' //show的display属性设置（显示）
+					document.getElementById('show2').style.display = 'none' //show的display属性设置（显示）
+					document.getElementById('show3').style.display = 'none' //show的display属性设置（显示）
+					document.getElementById('clane2').className = 'navtitle'
+					document.getElementById('clane1').className = 'navtitle2'
+					document.getElementById('clane3').className = 'navtitle'
+				} else {
+					//如果show是显示的
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+			// 按键2
+			function showdiv1() {
+				if (
+					(showdiv_display =
+						document.getElementById('show2').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show2').style.display = 'block' //show的display属性设置为block（显示）
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('show3').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('clane2').className = 'navtitle2'
+					document.getElementById('clane1').className = 'navtitle'
+					document.getElementById('clane3').className = 'navtitle'
+				} else {
+					//如果show是显示的
+					document.getElementById('show').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+			// 按键3
+			function showdiv2() {
+				if (
+					(showdiv_display =
+						document.getElementById('show3').style.display ==
+						'none')
+				) {
+					//如果show是隐藏的
+					document.getElementById('show3').style.display = 'block' //show的display属性设置为block（显示）
+					document.getElementById('show1').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('show2').style.display = 'none' //show的display属性设置为block（显示）
+					document.getElementById('clane2').className = 'navtitle'
+					document.getElementById('clane1').className = 'navtitle'
+					document.getElementById('clane3').className = 'navtitle2'
+				} else {
+					//如果show是显示的
+					document.getElementById('show').style.display = 'none' //show的display属性设置为none（隐藏）
+				}
+			}
+
+			
+		</script>
+	</body>
+
+</html>
